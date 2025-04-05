@@ -1,0 +1,145 @@
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.util.LinkedList;
+
+public class GameBoard extends JPanel implements ActionListener {
+    private final int TILE_SIZE = 25; // Size of each tile
+    private final int WIDTH = 600; // Width of the board
+    private final int HEIGHT = 600; // Height of the board
+    private final int NUM_TILES_X = WIDTH / TILE_SIZE;
+    private final int NUM_TILES_Y = HEIGHT / TILE_SIZE;
+    
+    private LinkedList<Point> snake; // Snake's body (each Point represents a segment)
+    private Point food; // Food's position
+    private boolean gameOver;
+    private boolean foodEaten;
+    private int direction; // Direction the snake is moving (0=UP, 1=RIGHT, 2=DOWN, 3=LEFT)
+    private Timer timer;
+    
+    public GameBoard() {
+        setPreferredSize(new Dimension(WIDTH, HEIGHT));
+        setBackground(Color.BLACK);
+        addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                int key = e.getKeyCode();
+                if (key == KeyEvent.VK_UP && direction != 2) direction = 0; // Up
+                if (key == KeyEvent.VK_RIGHT && direction != 3) direction = 1; // Right
+                if (key == KeyEvent.VK_DOWN && direction != 0) direction = 2; // Down
+                if (key == KeyEvent.VK_LEFT && direction != 1) direction = 3; // Left
+            }
+        });
+        setFocusable(true);
+    }
+
+    public void startGame() {
+        snake = new LinkedList<>();
+        snake.add(new Point(NUM_TILES_X / 2, NUM_TILES_Y / 2)); // Initial snake position
+        spawnFood(); // Spawn food
+        
+        direction = 1; // Snake starts moving right
+        gameOver = false;
+        foodEaten = false;
+        
+        timer = new Timer(100, this); // Timer for game updates (100ms delay between each update)
+        timer.start(); // Start the game loop
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (!gameOver) {
+            moveSnake();
+            checkCollisions();
+            if (foodEaten) {
+                spawnFood(); // Spawn new food
+                foodEaten = false; // Reset the flag
+            }
+            repaint();
+        }
+    }
+
+    public void moveSnake() {
+        Point head = snake.getFirst(); // Get current snake head
+        Point newHead = null;
+        
+        // Move in the current direction
+        if (direction == 0) newHead = new Point(head.x, head.y - 1); // Up
+        if (direction == 1) newHead = new Point(head.x + 1, head.y); // Right
+        if (direction == 2) newHead = new Point(head.x, head.y + 1); // Down
+        if (direction == 3) newHead = new Point(head.x - 1, head.y); // Left
+
+        // Check if snake has eaten food
+        if (newHead.equals(food)) {
+            foodEaten = true; // Food eaten, snake grows
+        } else {
+            snake.removeLast(); // If no food eaten, remove the tail (keep same size)
+        }
+
+        // Add the new head to the snake
+        snake.addFirst(newHead);
+    }
+
+    public void checkCollisions() {
+        Point head = snake.getFirst();
+        
+        // Check for wall collisions
+        if (head.x < 0 || head.x >= NUM_TILES_X || head.y < 0 || head.y >= NUM_TILES_Y) {
+            gameOver = true; // Game over
+        }
+
+        // Check for collisions with itself
+        for (int i = 1; i < snake.size(); i++) {
+            if (head.equals(snake.get(i))) {
+                gameOver = true; // Game over
+            }
+        }
+    }
+
+    public void spawnFood() {
+        // Spawn food at a random location not occupied by the snake
+        food = new Point((int) (Math.random() * NUM_TILES_X), (int) (Math.random() * NUM_TILES_Y));
+        while (snake.contains(food)) { // If food spawns inside the snake, spawn again
+            food = new Point((int) (Math.random() * NUM_TILES_X), (int) (Math.random() * NUM_TILES_Y));
+        }
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        if (gameOver) {
+            g.setColor(Color.RED);
+            g.drawString("Game Over!", WIDTH / 2 - 40, HEIGHT / 2);
+            return;
+        }
+
+        // Draw snake
+        g.setColor(Color.GREEN);
+        for (Point p : snake) {
+            g.fillRect(p.x * TILE_SIZE, p.y * TILE_SIZE, TILE_SIZE, TILE_SIZE);
+        }
+
+        // Draw food
+        g.setColor(Color.RED);
+        g.fillRect(food.x * TILE_SIZE, food.y * TILE_SIZE, TILE_SIZE, TILE_SIZE);
+    }
+}
+import javax.swing.*;
+
+public class SnakeGame {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Snake Game");
+        GameBoard board = new GameBoard(); // Create the board
+        
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(600, 600); // Set window size
+        frame.add(board); // Add the board to the frame
+        frame.setVisible(true);
+        
+        board.startGame(); // Start the game
+    }
+}

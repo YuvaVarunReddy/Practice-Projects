@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    .with {
+        width: 20%;
+        height: 100%;
+        background-color: black;
+    }
+
+    .button {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 40%;
+        border: none;
+        position: relative;
+        font-size: 20px;
+
+    }
+
+    .display {
+        display: flex;
+    }
+
+    .content {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    p {
+        color: white !important;
+        padding-left: 85%;
+        font-size: 35px;
+
+    }
+
+    .you {
+        width: 25%;
+    }
+
+    .you1 {
+        width: 100%;
+    }
+
+    .content1 {
+        margin-top: 30%;
+        /* margin-bottom: 30%; */
+    }
+
+    .you2 {
+        padding-left: 20%;
+        padding-bottom: 10%;
+    }
+
+    .you3 {
+        padding-left: 15%;
+        padding-bottom: 10%;
+    }
+
+    .you4 {
+        padding-left: 15%;
+        padding-bottom: 10%;
+    }
+
+    .you5 {
+        padding-left: 10%;
+        padding-bottom: 10%;
+    }
+</style>
+
+<body>
+
+    <div class="content">
+        <div class="with">
+            <div class="content1">
+                <p id="result">0</p>
+                <!-- <input type="text" id="result" value="0" readonly /> -->
+            </div>
+            <div class="display">
+                <div class="you">
+                    <div class="you1 you2">
+                        <button type="" class="button" style="background-color: #818181;"
+                            onclick="clearResult()">AC</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you3">
+                        <button type="" class="button" style="background-color: #818181;"
+                            onclick="appendValue('+/-')">+/-</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you4">
+                        <button type="" class="button" style="background-color: #818181;"
+                            onclick="appendValue('%')">%</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you5">
+                        <button type="" class="button" style="background-color: rgba(255, 166, 0, 0.85);">/</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="display">
+                <div class="you">
+                    <div class="you1 you2">
+                        <button type="" class="button" onclick="appendValue('7')">7</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you3">
+                        <button type="" class="button" onclick="appendValue('8')">8</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you4">
+                        <button type="" class="button" onclick="appendValue('9')">9</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you5">
+                        <button type="" class="button" style="background-color: rgba(255, 166, 0, 0.85);"
+                            onclick="appendValue('*')">*</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="display">
+                <div class="you">
+                    <div class="you1 you2">
+                        <button type="" class="button" onclick="appendValue('4')">4</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you3">
+                        <button type="" class="button" onclick="appendValue('5')">5</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you4">
+                        <button type="" class="button" onclick="appendValue('=6')">6</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you5">
+                        <button type="" class="button" style="background-color: rgba(255, 166, 0, 0.85);"
+                            onclick="appendValue('-')">-</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="display">
+                <div class="you">
+                    <div class="you1 you2">
+                        <button type="" class="button" onclick="appendValue('1')">1</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you3">
+                        <button type="" class="button" onclick="appendValue('2')">2</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you4">
+                        <button type="" class="button" onclick="appendValue('3')">3</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you5">
+                        <button type="" class="button" style="background-color: rgba(255, 166, 0, 0.85);"
+                            onclick="appendValue('+')">+</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="display">
+                <div class="you">
+                    <div class="you1 you2">
+                        <button type="" class="button"></button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you3">
+                        <button type="" class="button" onclick="appendValue('0')">0</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you4">
+                        <button type="" class="button" onclick="appendValue('.')">.</button>
+                    </div>
+                </div>
+                <div class="you">
+                    <div class="you1 you5">
+                        <button type="" class="button" style="background-color: rgba(255, 166, 0, 0.85);"
+                            onclick="calculate()">=</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // function ADD() {
+        //     document.getElementById('Adding').innerHTML = '1';
+        //     // document.getElementById('Adding').innerHTML = '2';
+
+        // }
+        // function ADD1() {
+        //     document.getElementById('Adding1').innerHTML = '2';
+
+        // }
+        // function ADD2() {
+        //     document.getElementById('Adding2').innerHTML = '3';
+
+        // }
+        // function ADD3() {
+        //     document.getElementById('Adding3').innerHTML = '4';
+
+        // }
+        // function ADD4() {
+        //     document.getElementById('Adding4').innerHTML = '5';
+
+        // }
+        // function ADD5() {
+        //     document.getElementById('Adding5').innerHTML = '6';
+
+        // }
+        // function ADD6() {
+        //     document.getElementById('Adding6').innerHTML = '7';
+
+        // }
+        // function ADD7() {
+        //     document.getElementById('Adding7').innerHTML = '8';
+
+        // }
+        let expression = "";
+
+        function appendValue(value) {
+            console.log(value);
+            const result = document.getElementById("result");
+            console.log(result)
+            if (result.value === "0" && !isNaN(value)) {
+                result.value = value;
+            } else {
+                result.value += value;
+            }
+            expression += value;
+        }
+
+        function clearResult() {
+            document.getElementById("result").value = "0";
+            expression = "";
+        }
+
+        function calculate() {
+            try {
+                const result = eval(expression);
+                document.getElementById("result").value = result;
+                expression = result.toString();
+            } catch (error) {
+                document.getElementById("result").value = "Error";
+                expression = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

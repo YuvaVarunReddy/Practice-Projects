@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .board {
+        width: 100%;
+        height: 90vh;
+        /* display: flex; */
+        background: -webkit-linear-gradient(left, #f6ede4, #211509);
+        justify-content: space-between;
+        align-content: center;
+        box-shadow: 0px 0px 5px 0px black;
+
+    }
+
+    .game {
+        /* display: flex; */
+        margin: 0% 10% 0% 10%;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+        margin-top: 5%;
+    }
+
+    .active {
+        width: 50%;
+        margin: 5%;
+        height: 50%;
+        background-color: #211509;
+        box-shadow: 0px 0px 5px 0px black;
+        border-radius: 3%;
+        color: #f6ede4;
+        border-bottom: 1.5px #211509 solid;
+
+
+    }
+
+    .player {
+        width: 50%;
+        margin: 5%;
+        height: 50%;
+        box-shadow: 0px 0px 5px 0px black;
+        background-color: #f6ede4;
+        border-radius: 3%;
+        color: #211509;
+
+    }
+
+    .players {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 60vh;
+    }
+
+    button {
+        width: 100px;
+        height: 100px;
+        border-radius: 10%;
+        border: none;
+        background-color: #d5d8c9;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .click {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 300px;
+        margin-right: 300px;
+        /* justify-content: left; */
+        /* align-content: ; */
+        /* margin-bottom: px; */
+    }
+
+    .click1 {
+        display: flex;
+        justify-content: space-between;
+        /* justify-content: right; */
+        /* align-content: ; */
+        /* margin-bottom: 500px; */
+    }
+
+    .playername1 {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        border-bottom: 1.5px #211509 solid;
+        /* border-bottom: 1px #f6ede4 solid; */
+    }
+
+    .playername2 {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        border-bottom: 1.5px #14213D solid;
+    }
+
+    .score {
+        padding-left: 20px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        font-family: Arial, sans-serif;
+    }
+
+    .save {
+        border: 1px white solid;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        background-color: #d5d8c9;
+        color: #5a636a, ;
+        align-content: center;
+        margin-left: 50px;
+        margin-top: 2px;
+        border-radius: 5%;
+    }
+
+    .save1 {
+        border: 1px white solid;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        background-color: #d5d8c9;
+        color: #211509, ;
+        align-content: center;
+        margin-left: 50px;
+        margin-top: 2px;
+        border-radius: 5%;
+    }
+
+    .actual {
+        margin-top: 12px;
+        border: 1px white solid;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        background-color: #d5d8c9;
+        color: #211509;
+        align-content: center;
+        margin-left: 30px;
+        border-radius: 5%;
+    }
+</style>
+
+<body>
+    <div class="game">
+        <div class="board">
+            <div class="players">
+                <div class="player" id="Player1">
+                    <h1 class="playername1">Player-1</h1>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <div class="score">Player Score:</div>
+                        <div class="actual" id="savescore1">0</div>
+
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <div class="score">Current Score: </div>
+
+                        <div class="actual" id="Actual">0</div>
+                    </div>
+                    <div class="save" onclick="Save('one')">Save</div>
+                </div>
+                <div class="player" id="Player2">
+                    <h1 class="playername2">Player-2</h1>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+
+                        <div class="score">Player Score:</div>
+                        <div class="actual" id="savescore2">0</div>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+
+                        <div class="score">Current Score:</div>
+                        <div class="actual" id="Actual1">0</div>
+                    </div>
+                    <div class="save1" onclick="Save('two')">Save</div>
+
+                </div>
+            </div>
+            <div class="click">
+                <button onclick="Click('one')" id="Dice">6</button>
+                <!-- <div class="click1"> -->
+                <button onclick="Click('two')" id="Dice1">6</button>
+                <!-- </div> -->
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+<script>
+    var PlayerScore1 = 0;
+    var PlayerScore2 = 0;
+    var CurrentScore;
+    var Score1 = 0;
+    var Score2 = 0;
+
+    let PlayeroneDice = true;
+
+    let player1 = document.getElementById('Player1');
+    let player2 = document.getElementById('Player2');
+
+
+    function Save(value) {
+        if (PlayeroneDice) {
+            if (value == 'two') {
+                return
+            }
+            Score1 = Score1 + PlayerScore1;
+            PlayerScore1 = 0;
+            document.getElementById('Actual').innerHTML = PlayerScore1;
+            document.getElementById('Actual').innerHTML = PlayerScore1;
+            document.getElementById('savescore1').innerHTML = Score1;
+
+            player1.classList.add('player');
+            player1.classList.remove('active');
+
+            player2.classList.add('active');
+            player2.classList.remove('player');
+            PlayeroneDice = false;
+            // element.addclassname
+            console.log(PlayeroneDice);
+
+        }
+        else {
+            if (value == 'one') {
+                return
+            }
+            Score2 = Score2 + PlayerScore2;
+            PlayeroneDice = true;
+            console.log(PlayeroneDice);
+            PlayerScore2 = 0;
+            document.getElementById('Actual1').innerHTML = PlayerScore2;
+            document.getElementById('Actual1').innerHTML = PlayerScore2;
+            document.getElementById('savescore2').innerHTML = Score2;
+
+            player2.classList.remove('active');
+            player2.classList.add('player');
+
+            player1.classList.add('active');
+            player1.classList.remove('player');
+        }
+
+    }
+
+    function Random() {
+        let Randomnum = Math.random() * 6;
+        Randomnum = Math.ceil(Randomnum);
+        return Randomnum;
+    }
+
+    function Click(value) {
+        if (PlayeroneDice) {
+            if (value == 'one') {
+                Numone = Random()
+
+                if (Numone == 6) {
+                    PlayeroneDice = false;
+                    PlayerScore1 = 0;
+
+                    player1.classList.add('player');
+                    player1.classList.remove('active');
+
+                    player2.classList.add('active');
+                    player2.classList.remove('player');
+
+                    document.getElementById('Actual').innerHTML = PlayerScore1;
+                    // document.getElementById('Actual').innerHTML = PlayerScore1;
+                }
+                if (Numone < 6) {
+                    player1.classList.add('active');
+                    player1.classList.remove('player');
+                    document.getElementById('Dice').innerHTML = Numone;
+
+                    PlayerScore1 = PlayerScore1 + Numone;
+                    // PlayerScore1 = 0;
+                    // document.getElementById('Actual').innerHTML = PlayerScore1;
+                    document.getElementById('Actual').innerHTML = PlayerScore1;
+
+                } else {
+                    // PlayeroneDice = false;
+                    // player1.classList.add('player');
+                    // player1.classList.remove('active');
+                }
+            } else {
+                return false;
+            }
+        }
+        else {
+            if (value == 'two') {
+                Numone = Random()
+                if (Numone == 6) {
+                    PlayeroneDice = true;
+                    PlayerScore2 = 0;
+
+                    // player2.classList.add('player');
+                    // player2.classList.remove('active');
+
+                    player2.classList.remove('active');
+                    player2.classList.add('player');
+
+                    player1.classList.add('active');
+                    player1.classList.remove('player');
+
+
+                    // document.getElementById('Actual1').innerHTML = PlayerScore2;
+                    document.getElementById('Actual1').innerHTML = PlayerScore2;
+                }
+                if (Numone < 6) {
+
+                    // player2.classList.add('active');
+                    // player2.classList.remove('player');
+
+                    document.getElementById('Dice1').innerHTML = Numone;
+
+                    PlayerScore2 = PlayerScore2 + Numone;
+                    // document.getElementById('Actual1').innerHTML = PlayerScore2;
+                    document.getElementById('Actual1').innerHTML = PlayerScore2;
+                }
+                else {
+                    PlayeroneDice = true;
+                }
+            } else {
+                return false;
+            }
+        }
+    }
+
+    // }
+
+</script>
+
+</html>

@@ -1,0 +1,248 @@
+.you1{
+    width: 100%;
+    display: flex;
+}
+.you2{
+    width: 10%;
+}
+.you3{
+    width: 40%;
+    
+}
+.you4{
+    height: 75px;
+    align-items: center;
+}
+.flip{
+    width: 20%;
+}
+.you5{
+    align-items: center;
+    height: 100%;
+    display: flex;
+}
+.you6{
+    width: 600px;
+    height: 30px;
+    border: none;
+    background-color: lightblue;
+    padding: 10px 20px;
+}
+.you6::placeholder{
+    color: black;
+    font-size: 15px;
+}
+.you7{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin: 1% 5%;
+}
+.you8{
+    padding: 0 5px;
+}
+.you9{
+    text-align: center;
+}
+body{
+    background-color: antiquewhite;
+}
+/* div{
+    background-color: white;
+} */
+.you10{
+    justify-content: center;
+    display: flex;
+}
+.you11{
+    width: 100%;
+    justify-content: center;
+}
+.you12{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    justify-content: center;
+    margin: 1% 5%;
+}
+.you13{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    height: 200px;
+}
+.you14{
+    height: 100%;
+    width: 100%;
+}
+.you15{
+    background-color: transparent;
+}
+.you16{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    height: 200px;
+    justify-content: end;
+    width: 89%;
+}
+.you17{
+    width: 100%;
+    display: flex;
+}
+.you18{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1% 5%;
+}
+.you20{
+    width: 33%;
+}
+.login{
+    width: 50%;
+    /* display: flex; */
+}
+.flipkartimg{
+    width: 100%;
+}
+.icon{
+    width: 20px;
+}
+.you21{
+    /* width: 45%; */
+}
+.you22{
+    justify-content: end;
+    display: flex;
+}
+.tel{
+    width: 70%;
+    height: 30px;
+    border-radius: 20px;
+}
+.signup{
+    width: 35%;
+    height: 50px;
+    border-radius: 20px;
+}
+.icon2{
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.you23{
+    padding-left: 40px;
+    padding-bottom: 0px;
+}
+.you24{
+    padding-left: 40px;
+    padding-top: 0px;
+}
+.you25{
+    padding-left: 40px;
+    padding-top: 40px;
+}
+.you26{
+    padding-left: 40px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+.you27{
+    padding-left: 40px;
+}
+.you28{
+    padding-left: 40px;
+    padding-top: 50px;
+}
+.you29{
+    padding-left: 40px;
+}
+.you30{
+    width: 90%;
+    margin: 5%;
+    box-shadow: 0px 0px 10px -2px black;
+}
+.you31{
+    width: 45%;
+    /* display: flex; */
+}
+.you32{
+    height: 100%;
+}
+.you33{
+    display: none;
+}
+.you34{
+    width: 150px;
+    height: 150px;
+
+}
+.you35{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.you36{
+    width: 20%;
+    height: 100%;
+    border: 1px rgba(0, 0, 0, 0.5) solid;
+    border-radius: 20px;
+}
+.you37{
+    width: 100px;
+    height: 40px;
+    /* justify-content: right; */
+}
+.you38{
+    justify-content: right;
+    display: flex;
+}
+.you39{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.you40{
+    padding-left: 30px;
+    padding-bottom: 4px;
+}
+.you41{
+    width: 50%;
+    display: flex;
+}
+.you42{
+    padding-left: 120px;
+}
+.you43{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.you44{
+    margin-right: 5px;
+}
+.you45{
+    width: 20%;
+    
+}
+.you46{
+    width: 60%;
+    padding-right: 20px;
+    padding-left: 25px;
+}
+.you47{
+    background-color: rgba(0, 128, 0, 0.733);
+}
+.body{
+    background: white;
+}
+

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        width: 300px;
+        height: 40px;
+        border: 1px black solid;
+    }
+
+    table {
+        border: 2px black solid;
+    }
+
+    td {
+        width: 100px;
+        height: 40px;
+        border: 1px black solid;
+        text-align: center;
+    }
+
+    button {
+        width: 100px;
+        height: 30px;
+    }
+</style>
+
+<body>
+    <label>Name:</label>
+    <input type="text" placeholder="Name" id="name">
+    <div>
+        <ul>
+            <label>Telugu:</label>
+            <li><input type="number" id="telugu"></li>
+            <label>English:</label>
+            <li> <input type="number" id="english"></li>
+            <label>Maths:</label>
+            <li> <input type="number" id="maths"></li>
+            <label>Science:</label>
+            <li> <input type="number" id="science"></li>
+            <label>Social:</label>
+            <li> <input type="number" id="social"></li>
+            <label>Hindi:</label>
+            <li><input type="number" id="hindi"></li>
+        </ul>
+
+        <div style="padding-bottom: 20px;"><button type="button" onclick="Markscard(value)">Submit</button></div>
+        <div style="padding-bottom: 20px;"><button type="button" onclick="Remove(value)">Delete</button></div>
+    </div>
+
+    <table>
+        <tr>
+            <td>S.No</td>
+            <td>Name</td>
+            <td>Marks</td>
+            <td>Total-Marks</td>
+            <td>Percentage</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="Name"></td>
+            <td id="Marks"></td>
+            <td id="TotalMarks"></td>
+            <td id="Percentage"></td>
+        </tr>
+        <ol>
+            <li id="Sai"></li>
+        </ol>
+    </table>
+    <div id="StudentData" class=""></div>
+
+
+    <script>
+
+        let NewArray = [];
+        function Markscard(value) {
+
+
+            let Name = "";
+            let Telugu;
+            let English;
+            let Maths;
+            let Science;
+            let Social;
+            let Hindi;
+
+
+
+
+            var Names = document.getElementById('name').value;
+
+            Telugu = parseInt(document.getElementById('telugu').value);
+            English = parseInt(document.getElementById('english').value);
+            Maths = parseInt(document.getElementById('maths').value);
+            Science = parseInt(document.getElementById('science').value);
+            Social = parseInt(document.getElementById('social').value);
+            Hindi = parseInt(document.getElementById('hindi').value);
+            console.log(Telugu);
+
+            // if ((Telugu > 0) && (Telugu <= 100)) {
+            //     alert('Pls enter your correct marks');
+            //     return false;
+            // } if ((English > 0) && (English <= 100)) {
+            //     alert('Pls enter your correct marks');
+            //     return false;
+            // } if ((Maths > 0) && (Maths <= 100)) {
+            //     alert('Pls enter your correct marks');
+            //     return false;
+            // } if ((Science > 0) && (Science <= 100)) {
+            //     alert('Pls enter your correct marks');
+            //     return false;
+            // } if ((Social > 0) && (Social <= 100)) {
+            //     alert('Pls enter your correct marks');
+            //     return false;
+            // } if ((Hindi > 0) && (Hindi <= 100)) {
+            //     alert('Pls enter your correct marks');
+            //     return false;
+            // }
+
+            marks = (Number(Telugu)) + (Number(English)) + (Number(Maths)) + (Number(Science)) + (Number(Social)) + (Number(Hindi));
+
+            console.log(marks);
+
+            const totalMarks = 600;
+
+            var percentage = parseFloat(marks / totalMarks * 100).toFixed(2);
+
+            console.log(Percentage);
+
+            document.getElementById('Name').innerHTML = Names;
+            document.getElementById('Marks').innerHTML = marks;
+            document.getElementById('TotalMarks').innerHTML = totalMarks;
+            document.getElementById('Percentage').innerHTML = percentage;
+
+
+            DataMarks = {
+                NewNames: Names,
+                NewMarks: marks,
+                FixedMarks: totalMarks,
+                GradePercentage: percentage
+            }
+
+
+            NewArray.push(DataMarks);
+            console.log(NewArray);
+
+            var Push = "";
+
+
+            for (i = 0; i < NewArray.length; i++) {
+                Yuva = `<table><tr><td>${i + 1}'</td><td>'` + NewArray[i].NewNames + '</td><td>' + NewArray[i].NewMarks + '</td><td>' + NewArray[i].FixedMarks + '</td><td>' + NewArray[i].GradePercentage + '</td><tr></table>';
+                Push += Yuva;
+            }
+
+            document.getElementById('StudentData').innerHTML = Push;
+        }
+
+
+
+        function Remove(value) {
+            NewArray.pop();
+            Yuva = "";
+            Push = "";
+            for (i = 0; i < NewArray.length; i++) {
+                Yuva = `<table><tr><td>${i + 1}'</td><td>'` + NewArray[i].NewNames + '</td><td>' + NewArray[i].NewMarks + '</td><td>' + NewArray[i].FixedMarks + '</td><td>' + NewArray[i].GradePercentage + '</td><tr></table>';
+                Push += Yuva;
+            }
+
+            document.getElementById('StudentData').innerHTML = Push;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        // let text1 = "Yuvavarun";
+        // let Push1 = ""; +
+        //     // function Text() {
+        //     Ranjith = "";
+        // for (i = 0; i < text1.length; i++) {
+        //     Ranjith += text1[i];
+        //     Name1 = '<ul><li>' + Ranjith + '</li></ul>';
+        //     Push1 += Name1;
+        //     console.log(Push1);
+        //     document.getElementById('Sai').innerHTML = Push1;
+        // }
+
+
+
+        // }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

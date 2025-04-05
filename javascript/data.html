@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label>Success:</label>
+        <div id="success"></div>
+        <label>Data:</label>
+        <div id="data"></div>
+        <label>Name:</label>
+        <div id="name"></div>
+        <label>Mobile:</label>
+        <div id="mobile"></div>
+        <label>Email:</label>
+        <div id="email"></div>
+        <label>Main_Service:</label>
+        <div id="main_service"></div>
+        <label>Main_ServiceDetails:</label>
+        <div id="deta_34"></div>
+        <label>Name:</label>
+        <div id="name1"></div>
+        <label>Parent ID:</label>
+        <div id="parent_id"></div>
+        <label>Child ID:</label>
+        <div id="child_id"></div>
+        <label>Image:</label>
+        <img id="Src" src="">
+    </div>
+</body>
+<script>
+
+
+    var Yuva = {
+        "success": 1,
+        "data": {
+            "data": [
+                {
+                    "id": 11,
+                    "name": "Ranjith",
+                    "mobile": "9515065693",
+                    "email": "test@gmail.com",
+                    "main_service": 1,
+                    "mainServiceDetail": {
+                        "data": [
+                            {
+                                "id": 1,
+                                "name": "Photographers",
+                                "parent_id": 0,
+                                "child_id": 0,
+                                "image_url": "https://fcscourses.spiderhit.in/media/photographers.webp",
+                                // "image": "media/photographers.webp",
+                                "status": "show",
+                                "description": "<p>Photographers</p>",
+                                "slug": "photographers"
+                            }
+                        ]
+                    },
+                    "other_services": "[2]",
+                    "secondaryServiceDetail": {
+                        "data": [
+                            {
+                                "id": 2,
+                                "name": "Wedding photography",
+                                "parent_id": 1,
+                                "child_id": 0,
+                                "image_url": "https://fcscourses.spiderhit.in/media/wedding_photography.webp",
+                                "image": "media/wedding_photography.webp",
+                                "status": "show",
+                                "description": "A challenging and emotionally charged branch of event photography that captures the essence of a couple's wedding day.",
+                                "slug": "wedding_photography"
+                            }
+                        ]
+                    },
+                    "profile_pic": "users/user_profile11.webp",
+                    "profile_pic_url": "https://fcscourses.spiderhit.in/users/user_profile11.webp",
+                    "location": null,
+                    "pincode": "515004",
+                    "state_id": null,
+                    "city_id": null,
+                    "city": "",
+                    "description": "Test",
+                    "created_at": "2025-01-21T10:59:26.000000Z",
+                    "updated_at": "2025-01-21",
+                    "mainGallery": {
+                        "data": [
+                            {
+                                "id": 92,
+                                "event_id": 1,
+                                "event": "Photographers",
+                                "vendor_id": 11,
+                                "vendor": "Ranjith",
+                                "image_url": "https://fcscourses.spiderhit.in/services/2bc35adc237fe627f17826b9d3faae15.webp",
+                                "image": "services/2bc35adc237fe627f17826b9d3faae15.webp"
+                            }
+                        ]
+                    },
+                    "subGallery": {
+                        "data": [
+                            {
+                                "id": 93,
+                                "event_id": 2,
+                                "event": "Wedding photography",
+                                "vendor_id": 11,
+                                "vendor": "Ranjith",
+                                "image_url": "https://fcscourses.spiderhit.in/services/0e70c7b75aa03d859e73e542705b2d69.webp",
+                                "image": "services/0e70c7b75aa03d859e73e542705b2d69.webp"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "message": "Data Fetched Successfully"
+    }
+    document.getElementById('success').innerHTML = Yuva.success;
+    document.getElementById('data').innerHTML = Yuva.data.data[0].id;
+    document.getElementById('name').innerHTML = Yuva.data.data[0].name;
+    document.getElementById('mobile').innerHTML = Yuva.data.data[0].mobile;
+    document.getElementById('email').innerHTML = Yuva.data.data[0].email;
+    document.getElementById('main_service').innerHTML = Yuva.data.data[0].main_service;
+    document.getElementById('deta_34').innerHTML = Yuva.data.data[0].mainServiceDetail.data[0].id;
+    document.getElementById('name1').innerHTML = Yuva.data.data[0].mainServiceDetail.data[0].name;
+    document.getElementById('parent_id').innerHTML = Yuva.data.data[0].mainServiceDetail.data[0].parent_id;
+    document.getElementById('child_id').innerHTML = Yuva.data.data[0].mainServiceDetail.data[0].child_id;
+    document.getElementById('Src').src = Yuva.data.data[0].mainServiceDetail.data[0].image_url;
+    document.getElementById('')
+
+</script>
+
+</html>

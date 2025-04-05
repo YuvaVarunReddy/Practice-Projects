@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    header {
+        background-color: #0073e6;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    h1,
+    h2 {
+        margin: 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .seat-layout {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .screen {
+        background-color: #ddd;
+        color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        width: 60%;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    .seats-container {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 10px;
+        justify-content: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .seat {
+        width: 35px;
+        height: 35px;
+        background-color: #444;
+        border: 1px solid #222;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .seat:hover {
+        background-color: #666;
+    }
+
+    .seat.booked {
+        background-color: #ff6f61;
+        cursor: not-allowed;
+    }
+
+    .seat.selected {
+        background-color: #00b894;
+    }
+
+    .summary {
+        text-align: center;
+        margin: 20px 0;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+        background-color: #0073e6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #005bb5;
+    }
+
+    .footer {
+        background-color: #0073e6;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <h1>Movie Seat Booking</h1>
+        <p>Select your seats below and confirm your booking!</p>
+    </header>
+
+    <main>
+        <section class="seat-layout">
+            <div class="screen">Screen</div>
+            <div id="seats-container" class="seats-container"></div>
+        </section>
+
+        <section class="summary">
+            <h2>Booking Summary</h2>
+            <p>Selected Seats: <span id="selected-count">0</span></p>
+            <button class="confirm-btn" id="confirm-btn">Confirm Booking</button>
+        </section>
+    </main>
+
+    <div>hodgivu</div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Movie Seat Booking Platform</p>
+    </footer>
+
+    <script src="script.js">
+        const seatsContainer = document.getElementById('seats-container');
+        const selectedCountElement = document.getElementById('selected-count');
+        const confirmButton = document.getElementById('confirm-btn');
+
+        const totalSeats = 200; // Total seats to be generated
+        let selectedSeats = 0;
+
+        // Generate seats dynamically
+        function generateSeats() {
+            for (let i = 1; i <= totalSeats; i++) {
+                const seat = document.createElement('div');
+                seat.classList.add('seat');
+
+                // Randomly make some seats booked (20% probability)
+                if (Math.random() > 0.8) {
+                    seat.classList.add('booked');
+                }
+
+                // Add click event to toggle seat selection
+                seat.addEventListener('click', () => {
+                    if (!seat.classList.contains('booked')) {
+                        seat.classList.toggle('selected');
+                        updateSelectedCount();
+                    }
+                });
+
+                seatsContainer.appendChild(seat);
+            }
+        }
+
+        // Update the selected seat count
+        function updateSelectedCount() {
+            selectedSeats = document.querySelectorAll('.seat.selected').length;
+            selectedCountElement.textContent = selectedSeats;
+        }
+
+        // Confirm booking action
+        confirmButton.addEventListener('click', () => {
+            if (selectedSeats > 0) {
+                alert(`Booking confirmed for ${selectedSeats} seat(s). Enjoy your movie!`);
+            } else {
+                alert('Please select at least one seat.');
+            }
+        });
+
+        // Initialize seat layout
+        generateSeats();
+
+    </script>
+</body>
+
+</html>

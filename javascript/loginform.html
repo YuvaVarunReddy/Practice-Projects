@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="stylesheet" content="width=device-width">
+    <title>Login Form </title>
+</head>
+<style>
+    .main {
+        width: 70%;
+        height: auto;
+        background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-bottom: 3%;
+    }
+
+    .main1 {
+        width: 30%;
+
+    }
+
+    .icon {
+        width: 70px;
+        height: 70px;
+        position: relative;
+        padding-top: 40%;
+        animation: upDown 2s ease-in-out infinite;
+
+    }
+
+    .div {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .text {
+        text-align: center;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .login {
+        width: 70%;
+        /* height: 500px; */
+        min-height: 500px;
+        background-color: white;
+        border-top-left-radius: 10% 50%;
+        border-bottom-left-radius: 10% 50%;
+        margin-top: 4%;
+        margin-right: 2%;
+    }
+
+    .text1 {
+        text-align: center;
+        opacity: 70%;
+        font-family: sans-serif;
+        padding-top: 4%;
+    }
+
+    .input {
+        width: 30px;
+        height: 30px;
+        border-radius: 70px;
+    }
+
+    .div1 {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .div2 {
+        padding-right: 10%;
+        padding-left: 11%;
+    }
+
+    input {
+        width: 70%;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px black solid;
+        /* opacity: 70%; */
+        padding-left: 2%;
+    }
+
+    .div3 {
+        padding-right: 10%;
+        padding-left: 11%;
+        padding-top: 2%;
+    }
+
+    button {
+        width: 25%;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        background: #0062cc;
+        color: white;
+        font-size: large;
+        font-family: sans-serif;
+        margin-top: 5%;
+        margin-left: 20px;
+    }
+
+    .error {
+        margin-top: 6px;
+        color: red;
+        font-family: sans-serif;
+    }
+
+    @keyframes upDown {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<body>
+    <form>
+        <div class="main">
+            <div style="display: flex; width: 100%;">
+                <div class="main1">
+                    <div class="div"><img src="https://courseapply.spiderhit.com/website/icon.png" alt="" class="icon">
+                    </div>
+                    <div class="text">
+                        <h1>Welcome To</h1>
+                    </div>
+                    <div class="text">SPIDERHIT</div>
+                </div>
+
+                <div class="login">
+                    <div class="text1">
+                        <h1>Course Registration Form</h1>
+                    </div>
+                    <div style="display: flex;" class="div2">
+                        <div class="div1"><input type="radio" name="Yeswanth" onclick="Student()" class="input">I Am
+                            a Student</div>
+                        <div class="div1"><input type="radio" class="input" name="Yeswanth" onclick="Referal()">I Am
+                            a Refferal</div>
+                    </div>
+                    <div class="div3"><input type="text" id="Navadeep" placeholder="Student Name*">
+                        <p id="Nameerror" class="error"></p>
+                    </div>
+                    <div class="div3"><input type="number" placeholder="Mobile Number*" id="Navadeep1">
+                        <p id="Nameerror1" class="error"></p>
+                    </div>
+                    <div class="div3" id="Rname" style="display: none;"><input type="text" placeholder="Referal Name"
+                            id="Navadeep3">
+                        <p id="Referal" class="error"></p>
+                    </div>
+                    <div class="div3" id="Rmobile" style="display: none;"><input type="number"
+                            placeholder=" Referal Mobile" id="Navadeep2">
+                        <p id="Nameerror2" class="error"></p>
+                    </div>
+                    <div class="div3" id="OTP" style="display: none;"><input type="number" id="OTP1"
+                            placeholder="Enter OTP">
+                        <p id="OTPerror" class="error"></p>
+                    </div>
+                    <div style="display: flex; justify-content: center; padding-bottom: 2%;">
+                        <button type="button" onclick="SendOTPStudent()" id="send">Send OTP</button>
+                        <button type="button" onclick="SendOTPReferal()" id="send1" style="display: none;">Send1
+                            OTP</button>
+                        <button type="button" style="display: none;" id="Resend">Resend OTP</button>
+                        <button type="button" style="display: none;" onclick="OTPVerify()" id="Verify">Verfiy
+                            OTP</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </form>
+</body>
+<script>
+    function Student() {
+        document.getElementById('Rname').style.display = 'none';
+        document.getElementById('Rmobile').style.display = 'none';
+        document.getElementById('OTP').style.display = 'none';
+        document.getElementById('Resend').style.display = 'none';
+        document.getElementById('Verify').style.display = 'none';
+        document.getElementById('send').style.display = 'block';
+        document.getElementById('send1').style.display = 'none';
+
+
+
+
+    }
+    function Referal() {
+        document.getElementById('Rname').style.display = 'block';
+        document.getElementById('Rmobile').style.display = 'block';
+        document.getElementById('OTP').style.display = 'none';
+        document.getElementById('Resend').style.display = 'none';
+        document.getElementById('Verify').style.display = 'none';
+        document.getElementById('send1').style.display = 'block';
+        document.getElementById('send').style.display = 'none';
+    }
+    function SendOTPReferal() {
+        var name = document.getElementById('Navadeep').value;
+        var mobile = document.getElementById('Navadeep1').value;
+        var mobile1 = document.getElementById('Navadeep2').value;
+        var Referalname = document.getElementById('Navadeep3').value;
+
+        console.log(name.length)
+        if (name.length === 0) {
+            document.getElementById('Nameerror').innerHTML = "Please enter your name"
+            return false;
+        } else {
+            document.getElementById('Nameerror').innerHTML = "";
+        }
+        if (mobile.length === 0) {
+            // alert("Please enter your name");
+            document.getElementById('Nameerror1').innerHTML = "Please enter your Mobile Number"
+            return false;
+        } else {
+            document.getElementById('Nameerror1').innerHTML = "";
+        }
+        if (Referalname.length === 0) {
+            document.getElementById('Referal').innerHTML = "Please enter your Referal Name"
+            return false;
+        } else {
+            document.getElementById('Referal').innerHTML = "";
+        }
+        if (mobile1.length != 6) {
+            document.getElementById('Nameerror2').innerHTML = "Please enter your Referal Mobile Number"
+            return false;
+        } else {
+            document.getElementById('Nameerror2').innerHTML = "";
+        }
+        document.getElementById('Resend').style.display = 'block';
+        document.getElementById('Verify').style.display = 'block';
+        document.getElementById('send1').style.display = 'none';
+        document.getElementById('send').style.display = 'none';
+        document.getElementById('OTP').style.display = 'block';
+    }
+    function SendOTPStudent() {
+        var name = document.getElementById('Navadeep').value;
+        var mobile = document.getElementById('Navadeep1').value;
+
+
+        console.log("student")
+        if (name.length === 0) {
+            // alert("Please enter your name");
+            document.getElementById('Nameerror').innerHTML = "Please enter your name"
+            return false;
+        } else {
+            document.getElementById('Nameerror').innerHTML = ""
+        }
+        if (mobile.length === 0) {
+            // alert("Please enter your name");
+            document.getElementById('Nameerror1').innerHTML = "Please enter your Mobile Number"
+            return false;
+        } else {
+            document.getElementById('Nameerror1').innerHTML = ""
+        }
+        document.getElementById('Resend').style.display = 'block';
+        document.getElementById('Verify').style.display = 'block';
+        document.getElementById('send').style.display = 'none';
+        document.getElementById('send1').style.display = 'none';
+        document.getElementById('OTP').style.display = 'block';
+    }
+    function OTPVerify() {
+        var OTP1 = document.getElementById('OTP1').value;
+        console.log(OTP1);
+
+        if ((OTP1 < 1000) || (OTP1 > 9999)) {
+            document.getElementById('OTPerror').innerHTML = "Please enter valid OTP";
+        } else {
+            document.getElementById('OTPerror').innerHTML = "";
+        }
+    }
+</script>
+
+</html>

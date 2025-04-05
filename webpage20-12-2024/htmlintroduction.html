@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+<style>
+    .you1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.775);
+        height: 70px;
+    }
+
+    .you2 {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+    .you3 {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 26px 16px;
+        text-decoration: none;
+    }
+
+
+    li a:hover {
+        background-color: rgba(245, 245, 220, 0.49);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 212px;
+        height: 900px;
+        background-color: #f1f1f1;
+        overflow: scroll;
+    }
+
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    .you4 {
+        display: flex;/
+    }
+
+    .you5 {
+        background-color: #bbb;
+        color: #000;
+        /* border: 1px solid; */
+        width: 1200px;
+        box-shadow: 0px 1px 8px 0px;
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-bottom: 30px;
+    }
+
+    .you6 {
+        float: left;
+        width: 100%;
+        padding: 30px 0px 0px 100px;
+    }
+
+    .you7 {
+        float: left;
+        padding: 5px 0px 0px 50px;
+    }
+
+    .you8 {
+        display: flex;
+        padding: 0px 0px 0px 250px;
+    }
+
+    .you9 {
+        float: left;
+        width: 100%;
+        padding: 0px 0px -1px 50px;
+    }
+
+    .you10 {
+        margin: -70px 0px 0px -50px;
+    }
+
+    .you11 {
+        margin-right: 100px;
+        margin-top: -10px;
+    }
+
+    .you12 {
+        background-image: url('https://i.pinimg.com/originals/dd/b7/d2/ddb7d26375807f772c47b7df57a15395.gif');
+        width: 100%;
+    }
+
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+</style>
+
+<body>
+
+    <div class="you1">
+        <li class="you2"><a href="./webpage.html" class="you3">Home</a>
+        </li>
+        <li class="you2"><a href="./webpage1.html" class="you3">HTML</a>
+
+        </li>
+        <li class="you2"><a href="./csswebpage1.html" class="you3">CSS</a></li>
+        <li style="float:right" class="you2"><a class="you3">About</a></li>
+
+    </div>
+
+    <div class="you4">
+        <div>
+            <ul>
+                <!-- <li><a href="#home">HTML Tutorial</a></li> -->
+                <li><a href="./htmlhomepage.html">HTML Home</a>
+                </li>
+                <li><a href="./htmlintroduction.html">HTML
+                        Introduction</a></li>
+                <li><a href="./htmlheadings.html">HTML
+                        Headings</a></li>
+                <li><a href="./htmlparagraph.html">HTML
+                        Paragraph</a></li>
+                <li><a href="./htmltable.html">HTML Tables</a>
+                </li>
+                <li><a href="./htmlimage.html">HTML Images</a>
+                </li>
+                <li><a href="./htmldiv.html">HTML Divs</a></li>
+                <div class="dropdown">
+                    <li><a href="./htmlforms.html">HTML Forms</a>
+
+                        <!-- <button class="dropbtn">Dropdown</button> -->
+                        <div class="dropdown-content">
+                            <a href="./htmlradiobutton.html">
+                                Radio Button
+                            </a>
+                            <a href="./htmlcheckboxes.html">Checkboxes
+                            </a>
+                            <a href="./htmlsubmitbutton.html">Submit
+                                Button</a>
+                        </div>
+                </div>
+                </li>
+                <li><a href="./htmllists.html">HTML Lists</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="you12">
+            <div class="you5">
+                <div>
+                    <div class="you6">
+                        <h2>HTML Introduction:</h2>
+                        <h2>What is HTML?</h2>
+                        <h4>HTML stands for Hyper Text Markup Language.</h4>
+                        <h4>HTML is the standard markup language for creating Web pages</h4>
+                        <h4>HTML describes the structure of a Web page</h4>
+                        <h4>HTML consists of a series of elements</h4>
+                        <h4>HTML elements tell the browser how to display the content</h4>
+                        <h4>HTML elements label pieces of content such as "this is a heading", "this is a paragraph",
+                            "this
+                            is a link", etc.</h4>
+                        <div>
+                            <h2>
+                                <p class="you7">Example:</p>
+                            </h2>
+
+                        </div>
+                    </div>
+                    <div class="you8">
+                        <div class="you9">
+                            <p>
+                                &#60;!DOCTYPE html&#62;
+                            </p>
+                            <p>
+                                &#60;html&#62;
+                            </p>
+                            <p>
+                                &#60;head&#62;
+                            </p>
+                            <p>
+                                &#60;title&#62;Page Title&#60;/title&#62;
+                            </p>
+                            <p>
+                                &#60;/head&#62;
+                            </p>
+                            <p>
+                                &#60;body&#62;
+                            </p>
+
+                            <p>
+                                &#60;h1&#62;My First Heading&#60;/h1&#62;
+                            </p>
+                            <p>
+                                &#60;p&#62;My first paragraph.&#60;/p&#62;
+                            </p>
+
+                            <p>
+                                &#60;/body&#62;
+                            </p>
+                            <p>
+                                &#60;/html&#62;
+                            </p>
+                        </div>
+
+                        <div class="you9">
+                            <h2>
+                                <p class="you10">Output:</p>
+                            </h2>
+
+
+                            <br>
+                            <h1 class="you11">My First Heading</h1>
+                            <p class="you11">My first paragraph.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        input {
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            padding: 5px;
+            border: 1px solid #ddd;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Search Filter Example</h2>
+    <input type="text" id="searchInput" placeholder="Search items...">
+
+    <div id="itemsList">
+        <div class="item">Apple</div>
+        <div class="item">Banana</div>
+        <div class="item">Orange</div>
+        <div class="item">Grapes</div>
+        <div class="item">Mango</div>
+    </div>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function () {
+            let filter = this.value.toLowerCase();
+            let items = document.querySelectorAll('.item');
+
+            items.forEach(function (item) {
+                let text = item.textContent.toLowerCase();
+                if (text.includes(filter)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

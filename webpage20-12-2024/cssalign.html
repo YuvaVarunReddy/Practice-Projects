@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+
+<style>
+    .you1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.775);
+        height: 70px;
+    }
+
+    .you2 {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+    .you3 {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 26px 16px;
+        text-decoration: none;
+    }
+
+
+    li a:hover {
+        background-color: rgba(245, 245, 220, 0.49);
+    }
+
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 212px;
+        height: 900px;
+        background-color: #f1f1f1;
+        overflow: scroll;
+    }
+
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    .you4 {
+        display: flex;/
+    }
+
+    .you5 {
+        background-color: #bbb;
+        color: #000;
+        height: 800px;
+        width: 1200px;
+        box-shadow: 0px 1px 8px 0px;
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-bottom: 30px;
+        overflow-y: scroll;
+    }
+
+    .you6 {
+        float: left;
+        width: 100%;
+        padding: 30px 0px 0px 50px;
+    }
+
+    .you7 {
+        float: left;
+        padding: 5px 0px 0px 50px;
+    }
+
+    .you8 {
+        display: flex;
+        padding: 0px 0px 0px 150px;
+    }
+
+    .you9 {
+        float: left;
+        width: 100%;
+        padding: 0px 0px -1px 50px;
+    }
+
+    .you10 {
+        margin: -70px 0px 0px -50px;
+    }
+
+    .you11 {
+        margin-right: 100px;
+        margin-top: -10px;
+    }
+
+    .you12 {
+        background-image: url('https://i.pinimg.com/originals/dd/b7/d2/ddb7d26375807f772c47b7df57a15395.gif');
+        width: 100%;
+    }
+
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="you1">
+        <li class="you2"><a href="./webpage.html" class="you3">Home</a></li>
+        <li class="you2"><a href="./webpage1.html" class="you3">HTML</a>
+
+        </li>
+        <li class="you2"><a href="./csswebpage1.html" class="you3">CSS</a></li>
+        <li style="float:right" class="you2"><a class="you3">About</a></li>
+
+    </div>
+
+
+    <div class="you4">
+        <div>
+            <ul>
+                <li><a href="#home">CSS Tutorial</a></li>
+
+                <li><a href="./csshome.html">CSS Home</a>
+                </li>
+                <li><a href="./csscomments.html">CSS Comments</a>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./csscolors.html">CSS Colors</a>
+                        <div class="dropdown-content">
+                            <a href="./csscolor1.html">
+                                Colors
+                            </a>
+                            <a href="./cssrgb.html">RGB
+                            </a>
+                            <a href="./csshex.html">HEX
+                            </a>
+                            <a href="./csshsl.html">
+                                HSL</a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssbackgrounds.html">CSS
+                            Background Color</a>
+                        <div class="dropdown-content">
+                            <a href="./cssbackgroundimage.html">
+                                Background-image
+                            </a>
+                            <a href="./cssbackgroundrepeat.html">Background
+                                Image Repeat
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssborders.html">CSS
+                            Borders</a>
+                        <div class="dropdown-content">
+                            <a href="./borderwidth.html">
+                                Border-width
+                            </a>
+                            <a href="./cssbordercolor.html">
+                                Border-color
+                            </a>
+                            <a href="./cssbordersides.html">
+                                Border-sides
+                            </a>
+                            <a href="./cssborderrounded.html">
+                                Rounded-Borders
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssmargins.html">CSS
+                            Margins</a>
+                        <div class="dropdown-content">
+                            <a href="./cssmargincollapse.html">
+                                Margin collapse
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csspadding.html">CSS
+                        Padding</a></li>
+                <li><a href="./cssheight-width.html">CSS
+                        Height/Width</a>
+                </li>
+                <li><a href="./cssboxmodel.html">CSS Box
+                        Model</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssoutline.html">CSS
+                            Outline</a>
+                        <div class="dropdown-content">
+                            <a href="./cssoutlinewidth.html">
+                                Outline-Width
+                            </a>
+                            <a href="./cssoutlinecolor.html">
+                                Outline-Color
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./csstextcolor.html">CSS
+                            Text-Color</a>
+                        <div class="dropdown-content">
+                            <a href="./csstextalignment.html">
+                                Text-Alignment
+                            </a>
+                            <a href="./csstextdecoration.html">
+                                Text-Decoration
+                            </a>
+                            <a href="./csstexttransformation.html">
+                                Text-Transformation
+                            </a>
+                            <a href="./csstextspacing.html">
+                                Text-Spacing
+                            </a>
+                            <a href="./csstextshadow.html">
+                                Text-Shadow
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssfontfamily.html">CSS
+                            Font-Family</a>
+                        <div class="dropdown-content">
+                            <a href="./cssfontwebsafe.html">
+                                Font-Web Safe
+                            </a>
+                            <a href="./cssfontstyle.html">
+                                Font-Style
+                            </a>
+                            <a href="./cssfontsize.html">
+                                Font-Size
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csslinks.html">CSS Links</a></li>
+                <li><a href="./csslists.html">CSS Lists</a></li>
+                <div class="dropdown">
+                    <li><a href="./csstableborder.html">CSS
+                            Table-Border</a>
+                        <div class="dropdown-content">
+                            <a href="./csstablesize.html">
+                                Table-Size
+                            </a>
+                            <a href="./csstablealignment.html">
+                                Table-Alignment
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./cssdisplay.html">CSS Display</a></li>
+                <li><a href="./cssmaxwidth.html">CSS Max-Width</a></li>
+                <li><a href="./cssposition.html">CSS Position</a></li>
+                <li><a href="./csszindex.html">CSS Z-index</a></li>
+                <li><a href="./cssoverflow.html">CSS Overflow</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssfloat.html">CSS
+                            Float</a>
+                        <div class="dropdown-content">
+                            <a href="./cssclear.html">
+                                Clear
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csslineblock.html">CSS Line-block</a></li>
+                <li><a href="./cssalign.html">CSS Align</a></li>
+                <li><a href="./csscombinators.html">CSS Combinators</a></li>
+                <li><a href="./csspseudoclasses.html">CSS Pseudo-classes</a></li>
+                <li><a href="./csspseudoelements.html">CSS Pseudo-Elements</a></li>
+                <li><a href="./cssopacity.html">CSS Opacity</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssnavbar.html">CSS
+                            Navbar</a>
+                        <div class="dropdown-content">
+                            <a href="./cssverticalbar.html">
+                                Vertical NavBar
+                            </a>
+                            <a href="./csshorizontalbar.html">
+                                Horizontal NavBar
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <li><a href="./cssdropdown.html">CSS Dropdowns</a></li>
+                <li><a href="./cssimagegallery.html">CSS Image Gallery</a></li>
+                <li><a href="./cssimagesprites.html">CSS Image Sprites</a></li>
+                <li><a href="./cssattrselectors.html">CSS Attr Selectors</a></li>
+                <li><a href="./cssforms.html">CSS Forms</a></li>
+                <li><a href="./csscounters.html">CSS Counters</a></li>
+                <li><a href="./csswebsitelayout.html">CSS Website Layout</a></li>
+                <li><a href="./cssunits.html">CSS Units</a></li>
+                <li><a href="./cssspecificity.html">CSS Specificity</a></li>
+                <li><a href="./cssimportant.html">CSS !important</a></li>
+
+
+
+            </ul>
+        </div>
+        <div class="you12">
+            <div class="you5">
+                <div>
+                    <div class="you6">
+                        <h2>CSS Layout - Horizontal & Vertical Align</h2>
+
+                        <div>
+                            <h2>
+                                <p class="you7">Example:</p>
+                            </h2>
+
+                        </div>
+                    </div>
+                    <div class="you8">
+                        <div class="you9">
+                            <p>
+                                &#60;!DOCTYPE html&#62;
+                            </p>
+                            <p>
+                                &#60;html&#62;
+                            </p>
+                            <p>
+                                &#60;head&#62;
+                            </p>
+                            <p>
+                                &#60;title&#62;CSS Layout - Horizontal & Vertical Align&#60;/title&#62;
+                            </p>
+
+                            &#60;style&#62;
+                            <p> .center {
+                                margin: auto;
+                                width: 60%;</br>
+                                border: 3px solid #73AD21;</br>
+                                padding: 10px;
+                                }</p>
+
+                            <p> .center1 {
+                                text-align: center;</br>
+                                border: 3px solid green;</br>
+                                }</p>
+
+                            <p> .img1 {
+                                display: block;</br>
+                                margin-left: auto;</br>
+                                margin-right: auto;</br>
+                                justify-content: center;</br>
+                                align-items: center;</br>
+                                }</p>
+
+                            <p> .right {
+                                justify-content: right;
+                                width: 300px;</br>
+                                float: right;</br>
+                                border: 3px solid #73AD21;</br>
+                                padding: 10px;</br>
+                                }</p>
+
+                            <p> .right1 {
+                                float: right;</br>
+                                width: 300px;</br>
+                                border: 3px solid #73AD21;</br>
+                                padding: 10px;</br>
+                                }</p>
+
+                            <p> .in1 {
+                                display: inline-block;
+                                }</p>
+
+                            <p> .in {
+                                border: 3px solid #4CAF50;</br>
+                                padding: 5px;
+                                }</p>
+
+                            <p> .img3 {
+                                float: right;
+                                }</p>
+
+                            <p> .img4 {
+                                float: right;
+                                }</p>
+
+                            <p> .clearfix::after {
+                                content: "";</br>
+                                clear: both;</br>
+                                display: table;</br>
+                                }</p>
+
+                            <p> .center2 {
+                                padding: 70px 0;</br>
+                                border: 3px solid green;</br>
+                                }</p>
+
+                            <p> .center3 {
+                                padding: 70px 0;</br>
+                                border: 3px solid green;</br>
+                                text-align: center;</br>
+                                }</p>
+
+                            <p> .center4 {
+                                line-height: 200px;</br>
+                                height: 200px;</br>
+                                border: 3px solid green;</br>
+                                text-align: center;</br>
+                                }</p>
+
+                            <p> .center5 {
+                                line-height: 1.5;</br>
+                                display: inline-block;</br>
+                                vertical-align: middle;</br>
+                                }</p>
+
+                            <p> .center6 {
+                                height: 200px;</br>
+                                position: relative;</br>
+                                border: 3px solid green;</br>
+                                }</p>
+
+                            <p> .center7 {
+                                margin: 0;</br>
+                                position: absolute;</br>
+                                top: 50%;
+                                left: 50%;</br>
+                                -ms-transform: translate(-50%, -50%);</br>
+                                transform: translate(-50%, -50%);</br>
+                                }</p>
+
+                            <p> .center8 {
+                                display: flex;</br>
+                                justify-content: center;</br>
+                                align-items: center;</br>
+                                height: 200px;</br>
+                                border: 3px solid green;</br>
+                                }</p>
+
+                            <p> &#60;/style&#62;</p>
+                            <p>
+                                &#60;/head&#62;
+                            </p>
+                            <p> &#60;body&#62;</p>
+
+                            <p>&#60;h2&#62;Center Align Elements &#60;/h2&#62;</p>
+                            <p>&#60;p&#62;To horizontally center a block element (like div), use margin:
+                                auto;&#60;/p&#62;</p>
+
+                            <p>&#60;div class="center"&#62;
+                            <p>&#60;p&#62;Hello World!&#60;/p&#62;</p>
+                            &#60;/div&#62;</p>
+
+                            <p>&#60;h2&#62;
+                                Center Text &#60;/h2&#62;</p>
+
+                            <p> &#60;div class="center1"&#62;
+
+                            <p> &#60;p &#62;This text is centered. &#60;/p&#62;</p>
+
+                            &#60;/div&#62;</p>
+
+                            <p>&#60;div class="in1"&#62;
+
+                            <p> &#60;h2&#62;Center an Image &#60;/h2&#62;</p>
+
+                            <p>&#60;p&#62;To center an image, set left and right margin to auto, and make it into a
+                                block
+                                element.
+                                &#60;/p&#62;</p>
+
+                            <p> &#60;img
+                                src="https://www.ryanfriedmanmotorcars.com/imagetag/2144/5/l/Used-2000-BMW-M5-1721079547.jpg"
+                                alt="Paris"
+                                style="width:40%" class="img1" &#62;</p>
+
+                            &#60;/div&#62;</p>
+
+
+                            <p> &#60;div&#62;
+                            <p> &#60;h2&#62;Right align with the position property&#60;/h2&#62;</p>
+
+                            <p> &#60;p&#62;An example of how to right align elements with the position property:
+                                &#60;/p&#62;</p>
+
+                            <p> &#60;div class="right" &#62;
+                            <p> &#60;p&#62;In my younger and more vulnerable years my father gave me some advice that
+                                I've
+                                been
+                                turning over in my mind ever since.&#60;/p&#62;</p>
+                            &#60;/div&#62;</p>
+                            &#60;/div&#62;</p>
+
+                            <p>&#60;div style="display: inline-block; width: 100%;"&#62;</p>
+                            <p> &#60;h2&#62;Right align with the float property&#60;/h2&#62;</p>
+
+                            <p> &#60;p&#62;An example of how to right align elements with the float
+                                property:&#60;/p&#62;</p>
+
+                            <p> &#60;div class="right1"&#62;
+                            <p> &#60;p&#62;In my younger and more vulnerable years my father gave me some advice that
+                                I've
+                                been
+                                turning over in my mind ever since.&#60;/p&#62;</p>
+                            &#60;/div&#62;</p>
+                            &#60;/div&#62;</p>
+
+                            <p>&#60;div class="in1"> &#62;
+                            <p> &#60;h2&#62;Without Clearfix&#60;/h2&#62;</p>
+
+                            <p>&#60;p&#62;This image is floated to the right. It is also taller than the element
+                                containing it,
+                                so
+                                it overflows outside of its container:&#60;/p&#62;</p>
+
+                            <p> &#60;div&#62;
+                            <p> &#60;img class="img1 img3"
+                                src="https://www.ryanfriedmanmotorcars.com/imagetag/2144/5/l/Used-2000-BMW-M5-1721079547.jpg"
+                                width="170"
+                                height="170"&#62;</p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+                            &#60;/div&#62;</p>
+
+                            <p> &#60;h2 style="clear:right"&#62;With New Modern Clearfix&#60;/h2&#62;</p>
+                            <p> &#60;p &#62;Add the clearfix hack to the containing element, to fix this problem:
+                                &#60;/p&#62;</p>
+
+                            <p> &#60;div class="clearfix in"&#62;
+                            <p> &#60;img class="img2 img3"
+                                src="https://www.ryanfriedmanmotorcars.com/imagetag/2144/5/l/Used-2000-BMW-M5-1721079547.jpg"
+                                width="170"
+                                height="170" class="img3"&#62;</p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+                            &#60;/div&#62;</p>
+                            &#60;/div&#62;</p>
+
+                            <p>&#60;div class="in1"&#62;
+                            <p> &#60;h2&#62;Center vertically with padding&#60;/h2&#62;</p>
+
+                            <p> &#60;p&#62;In this example, we use the padding property to center the div element
+                                vertically:
+                                &#60;/p&#62;</p>
+
+                            <p> &#60;div class="center"&#62;
+                            <p> &#60;p&#62;I am vertically centered.&#60;/p&#62;</p>
+                            &#60;/div&#62;</p>
+                            &#60;/div&#62;</p>
+
+                            <p> &#60;div&#62;
+                            <p> &#60;h2&#62;Center with padding and text-align&#60;/h2&#62;</p>
+
+                            <p> &#60;p &#62;In this example, we use padding and text-align to center the div element
+                                both
+                                vertically
+                                and horizontally:&#60;/p&#62;</p>
+
+                            <p> &#60;div class="center3"&#62;
+                            <p> &#60;p&#62;I am vertically and horizontally centered.&#60;/p&#62;</p>
+                            &#60;/div&#62;</p>
+                            &#60;/div&#62;</p>
+
+                            <p>&#60;div&#62;
+                            <p> &#60;h2&#62;Center with line-height&#60;/h2&#62;</p>
+                            <p> &#60;p&#62;In this example, we use the line-height property with a value that is equal
+                                to the
+                                height property to center the div element:&#60;/p&#62;</p>
+
+                            <p> &#60;div class="center4"&#62;
+                            <p> &#60;p class="center5"&#62;I am vertically and horizontally centered.&#60;/p&#62;</p>
+                            &#60;/div&#62;</p>
+                            &#60;/div&#62;</p>
+
+                            <p>&#60;div&#62;
+                            <p> &#60;h2&#62;Center with position and transform&#60;/h2&#62;</p>
+
+                            <p> &#60;p&#62;In this example, we use positioning and the transform property to vertically
+                                and
+                                horizontally center the div element:&#60;/p&#62;</p>
+
+                            <p>&#60;div class="center6"&#62;
+                            <p> &#60;p class="center7"&#62;I am vertically and horizontally centered.&#60;/p&#62;</p>
+                            &#60;/div&#62;</p>
+                            &#60;/div&#62;</p>
+
+
+
+                            <p>&#60;div&#62;
+                            <p> &#60;h2&#62;Flexbox Centering&#60;/h2&#62;</p>
+
+                            <p> &#60;p&#62;A container with both the justify-content and the align-items properties set
+                                to
+                                &#60;em&#62;center&#60;/em&#62; will align the item(s) in the center (in both axis).
+                                &#60;/p&#62;</p>
+
+                            <p> &#60;div class="center8"&#62;
+                            <p> &#60;p&#62;I am vertically and horizontally centered.&#60;/p&#62;</p>
+                            &#60;/div&#62;</p>
+                            &#60;/div&#62;</p>
+
+                            <p> &#60;/body&#62;</p>
+                            <p>
+                                &#60;/html&#62;
+                            </p>
+                        </div>
+
+                        <div class="you9">
+                            <h2>
+                                <p class="you10">Output:</p>
+                            </h2>
+
+
+                            <br>
+                            <style>
+                                .center {
+                                    margin: auto;
+                                    width: 60%;
+                                    border: 3px solid #73AD21;
+                                    padding: 10px;
+                                }
+
+                                .center1 {
+                                    text-align: center;
+                                    border: 3px solid green;
+                                }
+
+                                .img1 {
+                                    display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+
+                                .right {
+                                    /* position: absolute;
+                                    right: 0px; */
+                                    justify-content: right;
+                                    width: 300px;
+                                    float: right;
+                                    border: 3px solid #73AD21;
+                                    padding: 10px;
+                                }
+
+                                .right1 {
+                                    float: right;
+                                    width: 300px;
+                                    border: 3px solid #73AD21;
+                                    padding: 10px;
+                                }
+
+                                .in1 {
+                                    display: inline-block;
+                                }
+
+                                .in {
+                                    border: 3px solid #4CAF50;
+                                    padding: 5px;
+                                }
+
+                                .img3 {
+                                    float: right;
+                                }
+
+                                .img4 {
+                                    float: right;
+                                }
+
+                                .clearfix::after {
+                                    content: "";
+                                    clear: both;
+                                    display: table;
+                                }
+
+                                .center2 {
+                                    padding: 70px 0;
+                                    border: 3px solid green;
+                                }
+
+                                .center3 {
+                                    padding: 70px 0;
+                                    border: 3px solid green;
+                                    text-align: center;
+                                }
+
+                                .center4 {
+                                    line-height: 200px;
+                                    height: 200px;
+                                    border: 3px solid green;
+                                    text-align: center;
+                                }
+
+                                .center5 {
+                                    line-height: 1.5;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+
+                                .center6 {
+                                    height: 200px;
+                                    position: relative;
+                                    border: 3px solid green;
+                                }
+
+                                .center7 {
+                                    margin: 0;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    -ms-transform: translate(-50%, -50%);
+                                    transform: translate(-50%, -50%);
+                                }
+
+                                .center8 {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 200px;
+                                    border: 3px solid green;
+                                }
+                            </style>
+                            <h2>Center Align Elements</h2>
+                            <p>To horizontally center a block element (like div), use margin: auto;</p>
+
+                            <div class="center">
+                                <p>Hello World!</p>
+                            </div>
+
+                            <h2>Center Text</h2>
+
+                            <div class="center1">
+                                <p>This text is centered.</p>
+                            </div>
+                            <div class="in1">
+                                <h2>Center an Image</h2>
+                                <p>To center an image, set left and right margin to auto, and make it into a block
+                                    element.
+                                </p>
+
+                                <img src="https://www.ryanfriedmanmotorcars.com/imagetag/2144/5/l/Used-2000-BMW-M5-1721079547.jpg"
+                                    alt="Paris" style="width:40%" class="img1">
+
+                            </div>
+
+
+                            <div>
+                                <h2>Right align with the position property</h2>
+
+                                <p>An example of how to right align elements with the position property:</p>
+
+                                <div class="right">
+                                    <p>In my younger and more vulnerable years my father gave me some advice that I've
+                                        been
+                                        turning over in my mind ever since.</p>
+                                </div>
+                            </div>
+
+                            <div style="display: inline-block; width: 100%;">
+                                <h2>Right align with the float property</h2>
+
+                                <p>An example of how to right align elements with the float property:</p>
+
+                                <div class="right1">
+                                    <p>In my younger and more vulnerable years my father gave me some advice that I've
+                                        been
+                                        turning over in my mind ever since.</p>
+                                </div>
+                            </div>
+
+                            <div class="in1">
+                                <h2>Without Clearfix</h2>
+
+                                <p>This image is floated to the right. It is also taller than the element containing it,
+                                    so
+                                    it overflows outside of its container:</p>
+
+                                <div>
+                                    <img class="img1 img3"
+                                        src="https://www.ryanfriedmanmotorcars.com/imagetag/2144/5/l/Used-2000-BMW-M5-1721079547.jpg"
+                                        width="170" height="170">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+                                </div>
+
+                                <h2 style="clear:right">With New Modern Clearfix</h2>
+                                <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+                                <div class="clearfix in">
+                                    <img class="img2 img3"
+                                        src="https://www.ryanfriedmanmotorcars.com/imagetag/2144/5/l/Used-2000-BMW-M5-1721079547.jpg"
+                                        width="170" height="170" class="img3">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+                                </div>
+                            </div>
+
+                            <div class="in1">
+                                <h2>Center vertically with padding</h2>
+
+                                <p>In this example, we use the padding property to center the div element vertically:
+                                </p>
+
+                                <div class="center">
+                                    <p>I am vertically centered.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Center with padding and text-align</h2>
+
+                                <p>In this example, we use padding and text-align to center the div element both
+                                    vertically
+                                    and horizontally:</p>
+
+                                <div class="center3">
+                                    <p>I am vertically and horizontally centered.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Center with line-height</h2>
+                                <p>In this example, we use the line-height property with a value that is equal to the
+                                    height property to center the div element:</p>
+
+                                <div class="center4">
+                                    <p class="center5">I am vertically and horizontally centered.</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h2>Center with position and transform</h2>
+
+                                <p>In this example, we use positioning and the transform property to vertically and
+                                    horizontally center the div element:</p>
+
+                                <div class="center6">
+                                    <p class="center7">I am vertically and horizontally centered.</p>
+                                </div>
+                            </div>
+
+
+
+                            <div>
+                                <h2>Flexbox Centering</h2>
+
+                                <p>A container with both the justify-content and the align-items properties set to
+                                    <em>center</em> will align the item(s) in the center (in both axis).
+                                </p>
+
+                                <div class="center8">
+                                    <p>I am vertically and horizontally centered.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

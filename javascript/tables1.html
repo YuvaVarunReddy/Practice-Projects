@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        width: 100px;
+        height: 30px;
+    }
+
+    button {
+        width: 60px;
+        height: 20px;
+    }
+</style>
+
+<body>
+    <input type="number" id="Number">
+    <input type="number" id="Number1">
+    <button onclick="Table()">Submit</button>
+    <p id="tb"></p>
+</body>
+<script>
+
+    function Table() {
+
+        let start = document.getElementById('Number').value;
+        let end = document.getElementById('Number1').value;
+
+        let num = "";
+
+
+        for (i = start; i <= end; i++) {
+
+            for (j = 1; j <= 10; j++) {
+
+                num += i + "*" + j + "=" + i * j + "<br>";
+                document.getElementById('tb').innerHTML = num;
+
+            }
+
+
+        }
+    }
+</script>
+
+</html>

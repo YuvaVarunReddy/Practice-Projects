@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        width: 200px;
+        height: 30px;
+    }
+
+    span {
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+
+    button {
+        width: 100px;
+        height: 38px;
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+    <div style="display: flex;">
+        <form>
+            <input type="number" min="1" max="5" name="Rating" onchange="Ratingstar(event.target.value)">
+            <button type="button">Submit</button>
+        </form>
+    </div>
+    <span style='font-size:50px; color: gold;' id="Rating"></span>
+</body>
+<script>
+    // function Ratingstar(value) {
+    //     // var star = "&#9733";
+
+    //     for (i = 0; i < 5; i++) {
+    //         // console.log(star)
+    //         document.getElementById('Rating').innerHTML = "&#9733";
+    //     }
+    // }
+
+    // for (i = 0; i < 20; i++) {
+
+    //     console.log()
+    //     let b = [];
+    //     b.push(i);
+    //     console.log(b)  
+
+    //     if (i) {
+
+    //     }
+
+    // }
+
+    let i = 1;
+    let g = 25;
+    let num = Math.floor(25 / 2);
+    let c = 0
+    for (i = 1; i <= num; i++) {
+        console.log(i)
+        if (g % i == 0) {
+            c = c + 1
+
+        }
+    }
+    if (c == 1) {
+        console.log("Give number" + g + "Prime Number");
+
+    } else {
+        console.log("Give number" + g + " Not Prime Number");
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <label>Students Marks:</label>
+<input type="number" onChange="Yuva(event.target.value)">
+<h3 id="varun"></h3> -->
+
+<style>
+    * {
+        font-family: sans-serif;
+    }
+
+    .class {
+        width: 90%;
+        height: 800px;
+        border: 2px black solid;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .class1 {
+        width: 100%;
+        padding-left: 1%;
+
+    }
+
+    .class2 {
+        width: 80%;
+        margin-top: 1%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 200px;
+        border: 2px black solid;
+        background-color: whitesmoke;
+        /* display: flex; */
+    }
+
+    .class3 {
+        width: 40%;
+        padding-left: 6%;
+        padding-top: 2%;
+        font-size: large;
+    }
+
+    .class4 {
+        width: 80%;
+        margin-top: 1%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 200px;
+        border: 2px black solid;
+        background-color: whitesmoke;
+    }
+
+    .class5 {
+        width: 15%;
+        height: 30px;
+
+    }
+
+    .class6 {
+        padding-left: 2%;
+        padding-top: 1%;
+    }
+
+    .class7 {
+        margin-left: 90%;
+        margin-top: 5%;
+    }
+
+    button {
+        width: 80%;
+        height: 30px;
+        background-color: aliceblue;
+        border: none;
+        box-shadow: 0px 0px 5px 0px black;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        color: black;
+        background-color: darkgray;
+        box-shadow: 0px 0px 5px 0px black;
+        border: none;
+    }
+</style>
+
+<body>
+
+
+    <header style="font-size: xx-large; font-weight: 900; padding-top: 2%; text-align: center; ">
+        Student Marks List:
+    </header>
+
+
+    <div class="class">
+        <div class="class1">
+            <div>
+                <h3>Student Information:</h3>
+            </div>
+        </div>
+
+
+        <div class="class2">
+            <div style="display: flex;">
+                <div class="class3"><label>Student Name:</label>
+                    <input type="text" style="width: 100%; height: 30px;">
+                </div>
+                <div class="class3"><label>Father Name:</label>
+                    <input type="text" style="width: 100%; height: 30px;">
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div class="class3"><label>Institute Name:</label>
+                    <input type="text" style="width: 100%; height: 30px; ">
+                </div>
+                <div class="class3"><label>Batch:</label>
+                    <input type="text" style="width: 100%; height: 30px;">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="class1">
+            <div>
+                <h3>Subjects Marks:</h3>
+            </div>
+        </div>
+
+        <div class="class2">
+            <div>
+                <div class="class6">
+                    <label>English:</label>
+                    <input type="number" class="class5" onchange="Yuva(event.target.value,'eng')"> Out of 100
+                </div>
+
+                <div class="class6">
+                    <label>Maths:</label>
+                    <input type="number" class="class5" onchange="Yuva(event.target.value,'math')">Out of 100
+                </div>
+
+                <div class="class6">
+                    <label>Social:</label>
+                    <input type="number" class="class5" onchange="Yuva(event.target.value,'soc')">Out of 100
+                </div>
+                <div class="class6">
+                    <label>Science:</label>
+                    <input type="number" class="class5" onchange="Yuva(event.target.value,'sci')">Out of 100
+                </div>
+            </div>
+            <div class="class7">
+                <div><button type="submit">Submit</button></div>
+            </div>
+        </div>
+
+        <div class="class1">
+            <div>
+                <h3>Subjects Grade:</h3>
+            </div>
+        </div>
+
+
+        <div class="class6">
+            <label>English Subject Grade:</label>
+            <!-- <p id="varun"></p> -->
+            <input type="" class="class5" id="English">
+        </div>
+
+        <div class="class6">
+            <label>Maths Subject Grade:</label>
+            <input type="" class="class5" id="Maths">
+        </div>
+
+        <div class="class6">
+            <label>Social Subject Grade:</label>
+            <input type="" class="class5" id="Social">
+        </div>
+        <div class="class6">
+            <label>Science Subject Grade:</label>
+            <input type="" class="class5" id="Science">
+        </div>
+    </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        // var StudentmarksinEnglish = 45;
+        // if (StudentmarksinEnglish > 100) {
+        //     document.write("Student Pass With A+ Grade")
+        // } else if (StudentmarksinEnglish < 50) {
+        //     document.write("Student Fail")
+        // }
+
+
+        function Yuva(value, sub) {
+            var marks = value;
+            let grade = '';
+
+            if (sub == 'eng') {
+
+                if (marks >= 91 && marks <= 100) {
+                    grade = 'A+'
+                } else if (marks >= 81 && marks <= 90) {
+                    grade = 'A'
+                } else if (marks >= 71 && marks <= 80) {
+                    grade = 'B+'
+                } else if (marks >= 61 && marks <= 70) {
+                    grade = "B"
+                } else if (marks >= 51 && marks <= 60) {
+                    grade = "C"
+                } else if (marks >= 35 && marks <= 50) {
+                    grade = "D"
+                } else if (marks <= 34) {
+                    grade = "Fail"
+                }
+
+                document.getElementById('English').value = grade;
+
+            } else if (sub == 'math') {
+
+                if (marks >= 91 && marks <= 100) {
+                    grade = "A+"
+                } else if (marks >= 81 && marks <= 90) {
+                    grade = "A"
+                } else if (marks >= 71 && marks <= 80) {
+                    grade = "B+"
+                } else if (marks >= 61 && marks <= 70) {
+                    grade = "B"
+                } else if (marks >= 51 && marks <= 60) {
+                    grade = "C"
+                } else if (marks >= 35 && marks <= 50) {
+                    grade = "D"
+                } else if (marks <= 34) {
+                    grade = "Fail"
+                }
+                document.getElementById('Maths').value = grade;
+
+            } else if (sub == 'soc') {
+                if (marks >= 91 && marks <= 100) {
+                    grade = "A+"
+
+                } else if (marks >= 81 && marks <= 90) {
+                    grade = "A"
+                } else if (marks >= 71 && marks <= 80) {
+                    grade = "B+"
+                } else if (marks >= 61 && marks <= 70) {
+                    grade = "B"
+                } else if (marks >= 51 && marks <= 60) {
+                    grade = "C"
+                } else if (marks >= 35 && marks <= 50) {
+                    grade = "D"
+                } else if (marks <= 34) {
+                    grade = "Fail"
+                }
+                document.getElementById('Social').value = grade;
+
+            } else if (sub == 'sci') {
+                if (marks >= 91 && marks <= 100) {
+                    grade = "A+"
+                } else if (marks >= 81 && marks <= 90) {
+                    grade = "A"
+                } else if (marks >= 71 && marks <= 80) {
+                    grade = "B+"
+                } else if (marks >= 61 && marks <= 70) {
+                    grade = "B"
+                } else if (marks >= 51 && marks <= 60) {
+                    grade = "C"
+                } else if (marks >= 35 && marks <= 50) {
+                    grade = "D"
+                } else if (marks <= 34) {
+                    grade = "Fail"
+                }
+                document.getElementById('Science').value = grade;
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

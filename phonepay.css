@@ -1,0 +1,102 @@
+.you1{
+    width: 40px;
+}
+.you2{
+     border: 2px solid white;
+     background-color: white;
+    padding: 20px;
+     width: 30%;
+}
+.you3{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.you4{
+    width: 30px;
+}
+.you5{
+    width: 300px;
+}
+.you6{
+    width: 100%;
+    display: flex;
+    color: s;
+}
+.you7{
+    width: 10%;
+    justify-content: left;
+}
+.you8{
+    width: 10%;
+    justify-content: right;
+}
+.you9{
+    width: 80%;
+
+}
+.you10{
+    font-weight: 900;
+    font-size: 20px;
+}
+.you11{
+    align-items: center;
+    display:inline-flex;
+    text-align: left;
+}
+.you12{
+    width: 20px;
+}
+.you13{
+      font-size: 30px;
+}
+span{
+    color: purple;
+}
+.you14{
+    width: 450px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+}
+.you15{
+    font-weight: 800;
+    font-size: 15px;
+}
+.you16{
+    border-radius: 50px;
+    border: 2px solid black;
+    width: 25px;
+    height: 25px;
+    background: none;
+}
+.you17{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.you18{
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+.you19{
+    color: black;
+}
+.you20{
+    padding-right: 5px;
+}
+.you21{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.you22{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+*{
+    font-family:sans-serif;
+}
+.you23{
+    background-color: rgba(128, 128, 128, 0.132);
+}

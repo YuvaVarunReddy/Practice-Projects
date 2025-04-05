@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The length Property</h2>
+
+    <p>The length property returns the length of an array:</p>
+
+    <p id="demo"></p>
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The length Property</h2>
+
+    <p> The length property returns the length of an array:</p>
+    <p id="demo1"></p>
+
+    <h1>JavaScript</h1>
+    <h2>The toString() Method</h2>
+    <p>The toString() method returns an array as a comma separated string:</p>
+    <p id="demo2"></p>
+
+    <script>
+        const fruits = [{ name: "Apple" }, { name: "Banana" }, { name: "Mango" }, { name: "Orange" },]
+        let size = fruits[1].name.length;
+        document.getElementById("demo").innerHTML = size;
+
+        const names = [{ name: "Yuva" }, { name: "Kamal" }, { name: "Yeswanth" }, { name: "Jagadeesh" }, { name: "Prathap" }, { name: "Ranjith" }]
+        let size1 = names[3].name.length;
+        document.getElementById("demo1").innerHTML = size1;
+
+        const bikes = [{ name: "Panigale V4" }, { name: "Gt650" }, { name: "Kawasaki Z900" }, { name: "BMW s1000rr" }]
+        // let money = bikes[0].name.length
+        document.getElementById("demo2").innerHTML = bikes.name.toString();
+    </script>
+
+</body>
+
+</html>

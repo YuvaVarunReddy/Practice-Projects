@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        width: 300px;
+        height: 40px;
+    }
+</style>
+
+<body>
+    <label>Email ID:</label>
+    <input placeholder="Enter your email id" id="text">
+    <button type="button" onclick="Submit()">Submit</button>
+</body>
+<script>
+
+
+    let count = 0;
+    var dotcount = 0;
+    let email = "";
+    let index = 0;
+
+    function Submit(data) {
+        let input = document.getElementById('text').value;
+        console.log(input);
+        for (i = 0; i < input.length; i++) {
+            // console.log(input[i]); 
+            // alert('Please enter valid email');
+
+            if (input[i] == "@") {
+                count = count + 1;
+                if (count == 2) {
+                    alert('Please enter valid email');
+                    break;
+                }
+                index = i;
+
+            }
+
+            if (i > index) {
+                if (input[index + 1] == '.') {
+                    alert('Please enter valid email');
+                }
+                if (input[i] == ".") {
+                    dotcount = dotcount + 1;
+                    if (dotcount == 2) {
+                        alert('Please enter valid email');
+                        break;
+                    }
+                }
+
+
+            }
+
+        }
+
+    }
+
+
+
+    // email = document.getElementById('num').value;
+    // console.log(typeof (email));
+    // for (i = 0; i < email.length; i++) {
+    //     id += email[i];
+    //     console.log(typeof (id));
+    // }
+
+
+</script>
+
+</html>

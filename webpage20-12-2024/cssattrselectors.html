@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+
+<style>
+    .you1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.775);
+        height: 70px;
+    }
+
+    .you2 {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+    .you3 {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 26px 16px;
+        text-decoration: none;
+    }
+
+
+    li a:hover {
+        background-color: rgba(245, 245, 220, 0.49);
+    }
+
+
+
+    .ull {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 212px;
+        height: 900px;
+        background-color: #f1f1f1;
+        overflow: scroll;
+    }
+
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    .you4 {
+        display: flex;/
+    }
+
+    .you5 {
+        background-color: #bbb;
+        color: #000;
+        height: 800px;
+        width: 1200px;
+        box-shadow: 0px 1px 8px 0px;
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-bottom: 30px;
+        overflow-y: scroll;
+    }
+
+    .you6 {
+        float: left;
+        width: 100%;
+        padding: 30px 0px 0px 50px;
+    }
+
+    .you7 {
+        float: left;
+        padding: 5px 0px 0px 50px;
+    }
+
+    .you8 {
+        display: flex;
+        padding: 0px 0px 0px 150px;
+    }
+
+    .you9 {
+        float: left;
+        width: 100%;
+        padding: 0px 0px -1px 50px;
+    }
+
+    .you10 {
+        margin: -70px 0px 0px -50px;
+    }
+
+    .you11 {
+        margin-right: 100px;
+        margin-top: -10px;
+    }
+
+    .you12 {
+        background-image: url('https://i.pinimg.com/originals/dd/b7/d2/ddb7d26375807f772c47b7df57a15395.gif');
+        width: 100%;
+    }
+
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .you13 {
+        margin-left: 70px;
+
+    }
+</style>
+
+<body>
+    <div class="you1">
+        <li class="you2"><a href="./webpage.html" class="you3">Home</a></li>
+        <li class="you2"><a href="./webpage1.html" class="you3">HTML</a>
+
+        </li>
+        <li class="you2"><a href="./csswebpage1.html" class="you3">CSS</a></li>
+        <li style="float:right" class="you2"><a class="you3">About</a></li>
+
+    </div>
+
+
+    <div class="you4">
+        <div>
+            <ul class="ull">
+                <li><a href="#home">CSS Tutorial</a></li>
+
+                <li><a href="./csshome.html">CSS Home</a>
+                </li>
+                <li><a href="./csscomments.html">CSS Comments</a>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./csscolors.html">CSS Colors</a>
+                        <div class="dropdown-content">
+                            <a href="./csscolor1.html">
+                                Colors
+                            </a>
+                            <a href="./cssrgb.html">RGB
+                            </a>
+                            <a href="./csshex.html">HEX
+                            </a>
+                            <a href="./csshsl.html">
+                                HSL</a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssbackgrounds.html">CSS
+                            Background Color</a>
+                        <div class="dropdown-content">
+                            <a href="./cssbackgroundimage.html">
+                                Background-image
+                            </a>
+                            <a href="./cssbackgroundrepeat.html">Background
+                                Image Repeat
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssborders.html">CSS
+                            Borders</a>
+                        <div class="dropdown-content">
+                            <a href="./borderwidth.html">
+                                Border-width
+                            </a>
+                            <a href="./cssbordercolor.html">
+                                Border-color
+                            </a>
+                            <a href="./cssbordersides.html">
+                                Border-sides
+                            </a>
+                            <a href="./cssborderrounded.html">
+                                Rounded-Borders
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssmargins.html">CSS
+                            Margins</a>
+                        <div class="dropdown-content">
+                            <a href="./cssmargincollapse.html">
+                                Margin collapse
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csspadding.html">CSS
+                        Padding</a></li>
+                <li><a href="./cssheight-width.html">CSS
+                        Height/Width</a>
+                </li>
+                <li><a href="./cssboxmodel.html">CSS Box
+                        Model</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssoutline.html">CSS
+                            Outline</a>
+                        <div class="dropdown-content">
+                            <a href="./cssoutlinewidth.html">
+                                Outline-Width
+                            </a>
+                            <a href="./cssoutlinecolor.html">
+                                Outline-Color
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./csstextcolor.html">CSS
+                            Text-Color</a>
+                        <div class="dropdown-content">
+                            <a href="./csstextalignment.html">
+                                Text-Alignment
+                            </a>
+                            <a href="./csstextdecoration.html">
+                                Text-Decoration
+                            </a>
+                            <a href="./csstexttransformation.html">
+                                Text-Transformation
+                            </a>
+                            <a href="./csstextspacing.html">
+                                Text-Spacing
+                            </a>
+                            <a href="./csstextshadow.html">
+                                Text-Shadow
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssfontfamily.html">CSS
+                            Font-Family</a>
+                        <div class="dropdown-content">
+                            <a href="./cssfontwebsafe.html">
+                                Font-Web Safe
+                            </a>
+                            <a href="./cssfontstyle.html">
+                                Font-Style
+                            </a>
+                            <a href="./cssfontsize.html">
+                                Font-Size
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csslinks.html">CSS Links</a></li>
+                <li><a href="./csslists.html">CSS Lists</a></li>
+                <div class="dropdown">
+                    <li><a href="./csstableborder.html">CSS
+                            Table-Border</a>
+                        <div class="dropdown-content">
+                            <a href="./csstablesize.html">
+                                Table-Size
+                            </a>
+                            <a href="./csstablealignment.html">
+                                Table-Alignment
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./cssdisplay.html">CSS Display</a></li>
+                <li><a href="./cssmaxwidth.html">CSS Max-Width</a></li>
+                <li><a href="./cssposition.html">CSS Position</a></li>
+                <li><a href="./csszindex.html">CSS Z-index</a></li>
+                <li><a href="./cssoverflow.html">CSS Overflow</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssfloat.html">CSS
+                            Float</a>
+                        <div class="dropdown-content">
+                            <a href="./cssclear.html">
+                                Clear
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csslineblock.html">CSS Line-block</a></li>
+                <li><a href="./cssalign.html">CSS Align</a></li>
+                <li><a href="./csscombinators.html">CSS Combinators</a></li>
+                <li><a href="./csspseudoclasses.html">CSS Pseudo-classes</a></li>
+                <li><a href="./csspseudoelements.html">CSS Pseudo-Elements</a></li>
+                <li><a href="./cssopacity.html">CSS Opacity</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssnavbar.html">CSS
+                            Navbar</a>
+                        <div class="dropdown-content">
+                            <a href="./cssverticalbar.html">
+                                Vertical NavBar
+                            </a>
+                            <a href="./csshorizontalbar.html">
+                                Horizontal NavBar
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <li><a href="./cssdropdown.html">CSS Dropdowns</a></li>
+                <li><a href="./cssimagegallery.html">CSS Image Gallery</a></li>
+                <li><a href="./cssimagesprites.html">CSS Image Sprites</a></li>
+                <li><a href="./cssattrselectors.html">CSS Attr Selectors</a></li>
+                <li><a href="./cssforms.html">CSS Forms</a></li>
+                <li><a href="./csscounters.html">CSS Counters</a></li>
+                <li><a href="./csswebsitelayout.html">CSS Website Layout</a></li>
+                <li><a href="./cssunits.html">CSS Units</a></li>
+                <li><a href="./cssspecificity.html">CSS Specificity</a></li>
+                <li><a href="./cssimportant.html">CSS !important</a></li>
+
+            </ul>
+        </div>
+        <div class="you12">
+            <div class="you5">
+                <div>
+                    <div class="you6">
+                        <h2>CSS Attribute Selectors</h2>
+
+
+                        <h4> Style HTML Elements With Specific Attributes</h4>
+                        <h4> It is possible to style HTML elements that have specific attributes or attribute values.
+                        </h4>
+
+                        <h4> CSS [attribute] Selector</h4>
+                        <h4> The [attribute] selector is used to select elements with a specified attribute.</h4>
+
+
+
+                        <div>
+                            <h2>
+                                <p class="you7">Example:</p>
+                            </h2>
+
+                        </div>
+                    </div>
+                    <div class="you8">
+                        <div class="you9">
+                            <p>
+                                &#60;!DOCTYPE html&#62;
+                            </p>
+                            <p>
+                                &#60;html&#62;
+                            </p>
+                            <p>
+                                &#60;head&#62;
+                            </p>
+                            <p>
+                                &#60;title&#62;Attribute Selectors&#60;/title&#62;
+                            </p>
+
+                            <p> &#60;style&#62;</p>
+
+                            <p> .a[target] {
+                                background-color: yellow;
+                                }</p>
+
+                            <p> .aa[target="_blank"] {
+                                background-color: yellow;
+                                }</p>
+
+                            <p> [title~="flower"] {
+                                border: 5px solid yellow;
+                                }</p>
+
+                            <p> [class|="top"] {
+                                background: yellow;
+                                }</p>
+
+                            <p> [class^="top"] {
+                                background: yellow;
+                                }</p>
+
+                            <p>[class$="test"] {
+                                background: yellow;
+                                }</p>
+
+                            <p> [class*="te"] {
+                                background: yellow;
+                                }</p>
+                            <p> &#60;/style&#62;</p>
+                            <p>
+                                &#60;/head&#62;
+                            </p>
+                            <p> &#60;body&#62;</p>
+
+
+
+                            <p> &#60;h2&#62;CSS [attribute] Selector&#60;/h2&#62;</p>
+                            <p> &#60;p&#62;The links with a target attribute gets a yellow background:&#60;/p&#62;</p>
+
+                            <p> &#60;a href="https://www.w3schools.com" class="a"&#62;w3schools.com&#60;/a&#62;</br>
+                                &#60;a href="http://www.disney.com" target="_blank"
+                                class="a"&#62;disney.com&#60;/a&#62;</br>
+
+                                &#60;a href="http://www.wikipedia.org" target="_top"
+                                class="a"&#62;wikipedia.org&#60;/a&#62;</p>
+
+                            <p> &#60;h2&#62;CSS [attribute="value"] Selector&#60;/h2&#62;</p>
+                            <p> &#60;p&#62;The link with target="_blank" gets a yellow background:&#60;/p&#62;</p>
+
+                            <p> &#60;a href="https://www.w3schools.com" class="aa"&#62;w3schools.com&#60;/a&#62;</br>
+                                &#60;a href="http://www.disney.com" target="_blank"
+                                class="aa"&#62;disney.com&#60;/a&#62;</br>
+                                &#60;a href="http://www.wikipedia.org" target="_top"
+                                class="aa"&#62;wikipedia.org&#60;/a&#62;</p>
+
+
+                            <p> &#60;h2&#62;CSS [attribute~="value"] Selector&#60;/h2&#62;</p>
+                            <p> &#60;p&#62;All images with the title attribute containing the word "flower" get a yellow
+                                border.&#60;/p&#62;</p>
+
+                            <p> &#60;img
+                                src="https://cdn11.bigcommerce.com/s-er6we2l3gw/images/stencil/500x659/</br>
+                                products/32062/156944/190807_1__65493.1700133034.jpg?c=1"
+                                title="klematis flower" width="150" height="113"&#62;</br>
+                                &#60;img
+                                src="https://www.hilverdaflorist.com/wp-content/uploads/2023/03/HEADER-How-to-keep-you</br>
+                                r-cut-flowers-fresh-longer-tricks-1-scaled.jpg"
+                                title="flower" width="224" height="162"&#62;</br>
+                                &#60;img
+                                src="https://cdn.shopify.com/s/files/1/0068/4215/5090/files/61b07dfe5e08--MoneyTree-Grower-4.jpg?v=1721250814"
+                                title="tree" width="200" height="358"&#62;</p>
+
+                            <p> &#60;h2&#62;CSS [attribute|="value"] Selector&#60;/h2&#62;</p>
+
+                            <p> &#60;h1 class="top-header"&#62;Welcome&#60;/h1&#62;</p>
+                            <p> &#60;p class="top-text"&#62;Hello world!&#60;/p&#62;</br>
+                                &#60;p class="topcontent"&#62;Are you learning CSS?&#60;/p&#62;</p>
+
+
+
+                            <p>&#60;h2&#62;CSS [attribute^="value"] Selector&#60;/h2&#62;</p>
+
+                            <p> &#60;h1 class="top-header"&#62;Welcome&#60;/h1&#62;</p>
+                            <p> &#60;p class="top-text"&#62;Hello world!&#60;/p&#62;&#62;</br>
+                                &#60;p class="topcontent"&#62;Are you learning CSS?&#60;p&#62;</p>
+
+
+                            <p> &#60;h2&#62;CSS [attribute$="value"] Selector&#60;/h2&#62;</p>
+
+                            <p> &#60;div class="first_test"&#62;The first div element.&#60;/div&#62;</p>
+                            <p> &#60;div class="second"&#62;The second div element.&#60;/div&#62;</p>
+                            <p> &#60;div class="my-test"&#62;The third div element.&#60;/div&#62;</p>
+                            <p> &#60;p class="mytest"&#62;This is some text in a paragraph.&#60;/p&#62;</p>
+
+
+                            <p> &#60;h2&#62;CSS [attribute*="value"] Selector&#60;/h2&#62;</p>
+
+                            <p> &#60;div class="first_test"&#62;The first div element.&#60;/div&#62;</p>
+                            <p> &#60;div class="second"&#62;The second div element.&#60;/div&#62;</p>
+                            <p> &#60;div class="my-test"&#62;The third div element.&#60;/div&#62;</p>
+                            <p> &#60;p class="mytest"&#62;This is some text in a paragraph.&#60;/p&#62;</p>
+
+
+
+
+
+                            <p> &#60;/body&#62;</p>
+                            <p>
+                                &#60;/html&#62;
+                            </p>
+                        </div>
+
+                        <div class="you9 you13">
+                            <h2>
+                                <p class="you10">Output:</p>
+                            </h2>
+
+
+                            <br>
+                            <style>
+                                .a[target] {
+                                    background-color: yellow;
+                                }
+
+                                .aa[target="_blank"] {
+                                    background-color: yellow;
+                                }
+
+                                [title~="flower"] {
+                                    border: 5px solid yellow;
+                                }
+
+                                [class|="top"] {
+                                    background: yellow;
+                                }
+
+                                [class^="top"] {
+                                    background: yellow;
+                                }
+
+                                [class$="test"] {
+                                    background: yellow;
+                                }
+
+                                [class*="te"] {
+                                    background: yellow;
+                                }
+                            </style>
+
+                            <h2>CSS [attribute] Selector</h2>
+                            <p>The links with a target attribute gets a yellow background:</p>
+
+                            <a href="https://www.w3schools.com" class="a">w3schools.com</a>
+                            <a href="http://www.disney.com" target="_blank" class="a">disney.com</a>
+                            <a href="http://www.wikipedia.org" target="_top" class="a">wikipedia.org</a>
+
+                            <h2>CSS [attribute="value"] Selector</h2>
+                            <p>The link with target="_blank" gets a yellow background:</p>
+
+                            <a href="https://www.w3schools.com" class="aa">w3schools.com</a>
+                            <a href="http://www.disney.com" target="_blank" class="aa">disney.com</a>
+                            <a href="http://www.wikipedia.org" target="_top" class="aa">wikipedia.org</a>
+
+
+                            <h2>CSS [attribute~="value"] Selector</h2>
+                            <p>All images with the title attribute containing the word "flower" get a yellow border.</p>
+
+                            <img src="https://cdn11.bigcommerce.com/s-er6we2l3gw/images/stencil/500x659/products/32062/156944/190807_1__65493.1700133034.jpg?c=1"
+                                title="klematis flower" width="150" height="113">
+                            <img src="https://www.hilverdaflorist.com/wp-content/uploads/2023/03/HEADER-How-to-keep-your-cut-flowers-fresh-longer-tricks-1-scaled.jpg"
+                                title="flower" width="224" height="162">
+                            <img src="https://cdn.shopify.com/s/files/1/0068/4215/5090/files/61b07dfe5e08--MoneyTree-Grower-4.jpg?v=1721250814"
+                                title="tree" width="200" height="358">
+
+                            <h2>CSS [attribute|="value"] Selector</h2>
+
+                            <h1 class="top-header">Welcome</h1>
+                            <p class="top-text">Hello world!</p>
+                            <p class="topcontent">Are you learning CSS?</p>
+
+
+
+                            <h2>CSS [attribute^="value"] Selector</h2>
+
+                            <h1 class="top-header">Welcome</h1>
+                            <p class="top-text">Hello world!</p>
+                            <p class="topcontent">Are you learning CSS?</p>
+
+
+                            <h2>CSS [attribute$="value"] Selector</h2>
+
+                            <div class="first_test">The first div element.</div>
+                            <div class="second">The second div element.</div>
+                            <div class="my-test">The third div element.</div>
+                            <p class="mytest">This is some text in a paragraph.</p>
+
+
+                            <h2>CSS [attribute*="value"] Selector</h2>
+
+                            <div class="first_test">The first div element.</div>
+                            <div class="second">The second div element.</div>
+                            <div class="my-test">The third div element.</div>
+                            <p class="mytest">This is some text in a paragraph.</p>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- </div> -->
+
+</body>
+
+</html>

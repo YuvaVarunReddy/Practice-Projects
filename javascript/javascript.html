@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>JavaScript Variables</h1>
+
+    <p>In this example, x, y, and z are undeclared.</p>
+    <p>They are automatically declared when first used.</p>
+
+    <p id="demo"></p> -->
+
+    <script>
+        // var Bagmrprate = 1000;
+        // var sellingprice = 1000;
+        // price = Bagmrpprice - sellingprice;
+        // mrpprice = price / Bagmrpprice * 100;
+        // console.log(mrpprice)
+
+
+        var a = 10;
+        var a = 5;
+        console.log(a)
+
+
+
+
+
+        function MRP(data) {
+            console.log(data)
+            var Bagmrprate = data.target.value;
+            console.log(Bagmrprate)
+            // price = Bagmrprate - sellingprice;
+            // console.log(price)
+            // document.getElementById('yuva').Bagmrprate
+
+            // mrpprice = price / Bagmrprate * 100;
+            // console.log(mrpprice)
+
+
+        }
+
+        function MRP1(data) {
+            console.log()
+            var Bagmrprate = document.getElementById('yuva').value;
+            console.log(Bagmrprate)
+
+            var sellingprice = data.target.value
+            console.log(sellingprice)
+            // console.log(Bagmrprate)
+            tprice = Bagmrprate - sellingprice;
+            console.log(tprice)
+
+
+        }
+
+        function MRP2() {
+            var x = document.getElementById('yuva').value;
+            console.log('MRP Rate:=' + x)
+            var y = document.getElementById('yuva1').value;
+            console.log('Selling Price=' + y)
+            if (x > y) {
+                alert('x is greater than y')
+            }
+            var z = x - y;
+            console.log('Amount=' + -z)
+            var u = z / x * 100;
+            console.log('Discount=' + u + '%')
+        }
+
+        function BikePrice(data) {
+            console.log(data)
+            var Bikeprice = data.target.value;
+            console.log(Bikeprice)
+        }
+
+        function BikeSellingprice() {
+            var Selling = document.getElementById('varun').value;
+            console.log(Selling)
+
+            var sellingprice1 = data.target.value
+            console.log(sellingprice1)
+            bprice = Bikeprice - sellingprice1;
+            console.log(bprice)
+
+        }
+
+        function Bike() {
+            var q = document.getElementById('varun').value;
+            console.log('Show Room Price:=' + q)
+            var w = document.getElementById('varun1').value;
+            console.log('Selling Price=' + w)
+            if (q > w) {
+                alert('q is greater than w')
+            } else {
+                alert('q is less than w')
+            }
+            var e = q - w;
+            console.log('Amount=' + -e)
+            var r = e / q * 100;
+            console.log('Discount=' + r + '%')
+        }
+
+    </script>
+    <label>Bag MRP Rate:</label>
+    <input type="number" id="yuva" onChange="MRP(event)">
+
+    <label>Bag Selling Price:</label>
+    <input type="number" id="yuva1" onchange="MRP1(event)">
+
+    <button onclick="MRP2()">Submit</button>
+
+    <label>Bike Price:</label>
+    <input type="number" id="varun" onChange="BikePrice(event)">
+
+
+    <label>Bike Selling Price:</label>
+    <input type="number" id="varun1" onchange="BikeSellingprice(event)">
+
+    <button onclick="Bike()">Submit</button>
+
+
+</body>
+
+</html>

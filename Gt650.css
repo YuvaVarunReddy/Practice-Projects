@@ -1,0 +1,370 @@
+.maindiv{
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.log{
+    width: 20%;
+    align-items: center;
+    display: flex;
+}
+.content{
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.content1{
+     padding-left: 5px;
+     padding-right: 30px;
+}
+.searchicon{
+    width: 20px;
+    height: 20px;
+}
+.login{
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.india{
+    width: 30px;
+    padding-right: 4px;
+}
+.backgrd{
+    background: black;
+}
+.text{
+    color: white;
+}
+.maindiv2{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.content3{
+    width: 30%;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+.content4{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.button{
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.button1{
+    width: 100px;
+    height: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.backgrd2{
+    background: rgba(0, 0, 0, 0.778);
+}
+.backgrd3{
+    background: white;
+    color: black;
+}
+.button2{
+    width: 150px;
+    height: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.backgrd4{
+    background: red;
+    color: white;
+}
+.paddingcontent{
+    padding-left: 20px;
+}
+.searchicon1{
+    width: 30px;
+    height: 30px;
+}
+.maindiv3{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background: rgba(0, 0, 0, 0.778);
+    color: white;
+}
+.home{
+    padding-left: 4px;
+    padding-right: 8px;
+}
+.maindiv4{
+    width: 100%;
+    display: flex;
+}
+.position{
+    position: sticky;
+    top: 0;
+}
+.position1{
+    position: sticky;
+    top: 60px;
+}
+.maindiv5{
+    width: 100;
+    /* height: 600px; */
+    display: flex;
+}
+.img{
+    width: 50%;
+    height: 100%;
+}
+.images{
+    /* width: 100%; */
+    height: 400px;
+}
+.image1{
+    width: 100%;
+}
+.content5{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.font{
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 60px;
+}
+.backgrnd5{
+    background: rgba(255, 228, 196, 0.246);
+}
+.font1{
+    padding-top: 10px;
+}
+.image2{
+    padding-left: 50px;
+}
+.font2{
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 125px;
+}
+.font3{
+    
+    padding-top: 20px;
+}
+.font4{
+    font-size: 25px;
+    font-weight: 510;
+}
+.button3{
+    width: 143px;
+    height: 40px;
+    background: red;
+    color: white;
+}
+.button4{
+    max-width: 500px;
+    height: 50px;
+}
+.button5{
+    padding-top: 20px;
+}
+.button6{
+    padding-top: 12px;
+}
+.font5{
+    font-size: 30px;
+    padding-top: 60px;
+}
+.forward{
+    width: 30px;
+    height: 25px;
+}
+.colours{
+    width: 150px;
+}
+.Gt650{
+    width: 100%;
+    display: flex;
+}
+.forward1{
+    padding-top: 30px;
+}
+.Gt6501{
+    padding-left: 15px;
+}
+.Gt6502{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Gt6503{
+    padding-right: 15px;
+}
+.m1{
+    padding-left: 80px;
+}
+.login2{
+    background-image: url("https://www.royalenfield.com/content/dam/royal-enfield/india/login/login-banner.webp");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.font6{
+    color: white;
+}
+.font7{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.button7{
+    width: 50%;
+    justify-content: end;
+    align-items: center;
+    display: flex;
+}
+.button8{
+    width: 300px;
+    height: 40px;
+}
+.paddingbutton{
+   margin-right: 20px;
+}
+.paddingbutton1{
+    margin-left: 10px;
+}
+.button9{
+    width: 306px;
+    height: 40px;
+}
+.login3{
+    width: 100;
+    display: flex;
+}
+.paddingbutton2{
+     margin-top: 15px; 
+     margin-right: 20px;
+}
+.paddingbutton3{
+    margin-left: 10px;
+    align-items: center;
+    display: flex;
+    margin-top: 21px;
+}
+.content6{
+    font-size: 25px;
+    font-weight: 510;
+    margin-top: 100px;
+    padding-left: 130px;
+}
+.button10{
+    width: 200px;
+    height: 35px;
+}
+.button11{
+    padding-left: 88px;
+    margin-top: 20px;
+}
+.content7{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 48px;
+}
+.margin{
+    margin-right: 20px;
+}
+.button12{
+    width: 50%;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+}
+.margin1{
+    margin-bottom: 500px;
+}
+.backgrd6{
+    background: rgba(0, 0, 255, 0.772);
+}
+.backgrd7{
+    background: rgba(255, 0, 0, 0.714);
+}
+button{
+    border: none;
+}
+.backgrd8{
+      background: content-box;
+      border: 2px solid white;
+}
+.dis{
+    display: none;
+}
+.dis1{
+    display: block;
+}
+.content8{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+}
+.maindiv6{
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.828);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.maindiv7{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.img2{
+    width: 25%;
+    height: 50%;
+}
+.img3{
+    width: 100%;
+    height: 100%;
+}
+.img4{
+    margin-top: -5px;
+}
+div a:hover {
+    
+    color: red;
+    width: 10px;
+}
+a:visited{
+    color: white;
+}
+image:hover{
+    margin: 2px;
+}
+image:visited{
+    color: cornsilk;
+}

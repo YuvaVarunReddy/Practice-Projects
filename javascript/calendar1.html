@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+        background-color: #f4f4f4;
+    }
+
+    .calendar {
+        width: 450px;
+        height: 400px;
+
+        background: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        color: #f4f4f4;
+    }
+
+    .calendar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .dates {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        text-align: center;
+    }
+
+    .date {
+        padding: 10px;
+        margin: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .date:hover {
+        background: #ddd;
+        color: black;
+    }
+</style>
+
+<body>
+    <!-- <div class="main">
+        <div class="calendar">
+            <div class="header">
+                <div class="btn"><i class="fa-solid fa-arrow-left"></i></div>
+                <div id="month-year">
+                    <div class="dropdown">
+                        <button onclick="ui('31')" class="dropbtn">Month</button>
+                        <div class="dropdown-content" id="months" style="display: none;">
+                            <span onclick="ui(31)">Januray</span>
+                            <span onclick="ui('')">February</span>
+                            <span onclick="ui(30)">March</span>
+                            <span onclick="ui(29)">April</span>
+                            <span onclick="ui(28)">May</span>
+                            <span onclick="ui(31)">June</span>
+                            <span onclick="ui(25)">July</span>
+                            <span onclick="ui(31)">August</span>
+                            <span onclick="ui(29)">September</span>
+                            <span onclick="ui(31)">November</span>
+                            <span onclick="ui(21)">December</span>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="btn"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div>
+                <table style="text-align: center; width: 100%;">
+                    <tr>
+                        <td>Sun</td>
+                        <td>Mon</td>
+                        <td>Tue</td>
+                        <td>Wed</td>
+                        <td>Thu</td>
+                        <td>Fri</td>
+                        <td>Sat</td>
+                    </tr>
+                </table>
+                <hr>
+                <table id="day" style="text-align: center; width: 100%; height: 400px;">
+
+                    <tr>
+                        <!-- <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td> -->
+    <!-- <td></td>
+                    </tr>
+                </table>
+
+            </div> -->
+    <!-- <div id="day">
+
+
+            </div> -->
+
+
+
+    <!-- </div> -->
+    <!-- </div> -->
+
+
+
+
+    <div class="calendar">
+        <div class="calendar-header">
+            <button onclick="prevMonth()">&lt;</button>
+            <h2 id="month-year"></h2>
+            <button onclick="nextMonth()">&gt;</button>
+        </div>
+        <div class="days">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>
+        <div class="dates" id="dates"></div>
+    </div>
+
+
+</body>
+<script>
+
+
+    let CurrentDate = new Date();
+
+    function Calendar() {
+        const MonthYear = document.getElementById('month-year');
+        const Dates = document.getElementById('dates');
+        Dates.innerHTML = "";
+
+        const Year = CurrentDate.getFullYear();
+        const Month = CurrentDate.getMonth();
+
+        var Monthtext = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        MonthYear.innerText = Monthtext[Month] + " " + Year;
+
+        console.log(MonthYear.innerText);
+        // MonthYear.innerText = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' }).format(CurrentDate);
+
+        const FirstDay = new Date(Year, Month, 1).getDay();
+        console.log(FirstDay);
+        const DaysinMonths = new Date(Year, Month + 1, 0).getDate();
+
+        for (i = 0; i < FirstDay; i++) {
+            Dates.innerHTML += "<div></div>"
+            console.log(Dates.innerHTML);
+        }
+
+        for (let Day = 1; Day <= DaysinMonths; Day++) {
+            const DateElement = document.createElement("div");
+            DateElement.classList.add("date");
+            DateElement.innerText = Day;
+            Dates.appendChild(DateElement);
+        }
+
+    }
+
+    function prevMonth() {
+        CurrentDate.setMonth(CurrentDate.getMonth() - 1);
+        Calendar();
+    }
+
+    function nextMonth() {
+        CurrentDate.setMonth(CurrentDate.getMonth() + 1);
+        Calendar();
+
+    }
+
+    Calendar();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Generate days 1 to 30
+    // const days = Array.from({ length: 30 }, (_, i) => i + 1);
+    // const calendar = document.getElementById('calendar');
+
+    // let row = "<div class=\"weekdays num\">"
+    // days.forEach((day, index) => {
+    //     // Create a new row for every 7 days
+
+    //     row += "<div class=\"days\">" + day + "</div>"
+    //     // if (index % 7 === 0) {
+    //     if (day % 7 == 0) {
+
+    //         row += "</div><div class=\"weekdays\">"
+    //     }
+
+    //     row = document.createElement('div');
+    //     row.className = 'days-row';
+    //     calendar.appendChild(row);
+    // }
+    // Create the day element
+    // const dayElement = document.createElement('div');
+    // dayElement.className = 'days';
+    // dayElement.textContent = day;
+    //     // row.appendChild(dayElement);
+    // });
+    // row += "</div>"
+    // // row += newDate()
+    // calendar.innerHTML = row;
+
+
+    //     const days = [{ length: 30 }, (i + 1)];
+    //     const calendar = document.getElementById('calendar');
+
+    //     // let row = "<div class=\"weekdays\">"
+    //     let i = 1;
+    //     for (i = 1; i < 30; i++) {
+    // document.getElementById()
+    //     }
+
+    // for (i = 1; i <= 30; i++) {
+    //     day = i + 1;
+    //     days += day + 1 + "<br>";
+    //     console.log(i)
+    //     document.getElementById('Days').innerHTML = days;
+    // }
+
+    // function Hover() {
+    //     let text = "<div class=\"weekdays num\">";
+    //     for (i = 1; i <= 31; i++) {
+    //         text += "<div> " + i + "</div>";
+    //         if (i % 7 == 0) {
+    //             text += "</div><div class=\"weekdays num\">";
+    //         }
+
+    //     }
+
+    //     text += "</div>"
+
+    //     document.getElementById('day').innerHTML = text;
+    //     document.getElementById('months').style.display = "block";
+    // }
+    // let month = "";
+    // let days = 0;
+
+    // function ui(val) {
+    //     if (val) {
+    //         let value = val;
+
+    //         let table = "<table class=\"\"><tr>";
+
+    //         for (i = 1; i <= value; i++) {
+    //             table += "<td>" + i + "</td>";
+    //             if (i % 7 == 0) {
+    //                 table += "</tr><tr>";
+    //             }
+    //         }
+
+    //         table += "</tr></table>"
+    //         document.getElementById('day').innerHTML = table;
+    //         document.getElementById('months').style.display = "block";
+
+    //     } else {
+
+
+    //     }
+    // }
+
+    // function MonthsofYear(Eachmonth) {
+    //     month = Eachmonth;
+    //     if (month == "Januray" || month == "March") {
+    //         days = 31;
+    //         Hover();
+    //     } else if (month == "February")
+    //         days = 28;
+    //     console.log(month);
+
+    // }
+
+</script>
+
+
+</html>

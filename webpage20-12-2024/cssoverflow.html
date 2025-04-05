@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+
+<style>
+    .you1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.775);
+        height: 70px;
+    }
+
+    .you2 {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+    .you3 {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 26px 16px;
+        text-decoration: none;
+    }
+
+
+    li a:hover {
+        background-color: rgba(245, 245, 220, 0.49);
+    }
+
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 212px;
+        height: 900px;
+        background-color: #f1f1f1;
+        overflow: scroll;
+    }
+
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    .you4 {
+        display: flex;/
+    }
+
+    .you5 {
+        background-color: #bbb;
+        color: #000;
+        height: 800px;
+        width: 1200px;
+        box-shadow: 0px 1px 8px 0px;
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-bottom: 30px;
+        overflow-y: scroll;
+    }
+
+    .you6 {
+        float: left;
+        width: 100%;
+        padding: 30px 0px 0px 50px;
+    }
+
+    .you7 {
+        float: left;
+        padding: 5px 0px 0px 50px;
+    }
+
+    .you8 {
+        display: flex;
+        padding: 0px 0px 0px 150px;
+    }
+
+    .you9 {
+        float: left;
+        width: 100%;
+        padding: 0px 0px -1px 50px;
+    }
+
+    .you10 {
+        margin: -70px 0px 0px -50px;
+    }
+
+    .you11 {
+        margin-right: 100px;
+        margin-top: -10px;
+    }
+
+    .you12 {
+        background-image: url('https://i.pinimg.com/originals/dd/b7/d2/ddb7d26375807f772c47b7df57a15395.gif');
+        width: 100%;
+    }
+
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="you1">
+        <li class="you2"><a href="./webpage.html" class="you3">Home</a></li>
+        <li class="you2"><a href="./webpage1.html" class="you3">HTML</a>
+
+        </li>
+        <li class="you2"><a href="./csswebpage1.html" class="you3">CSS</a></li>
+        <li style="float:right" class="you2"><a class="you3">About</a></li>
+
+    </div>
+
+
+    <div class="you4">
+        <div>
+            <ul>
+                <li><a href="#home">CSS Tutorial</a></li>
+
+                <li><a href="./csshome.html">CSS Home</a>
+                </li>
+                <li><a href="./csscomments.html">CSS Comments</a>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./csscolors.html">CSS Colors</a>
+                        <div class="dropdown-content">
+                            <a href="./csscolor1.html">
+                                Colors
+                            </a>
+                            <a href="./cssrgb.html">RGB
+                            </a>
+                            <a href="./csshex.html">HEX
+                            </a>
+                            <a href="./csshsl.html">
+                                HSL</a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssbackgrounds.html">CSS
+                            Background Color</a>
+                        <div class="dropdown-content">
+                            <a href="./cssbackgroundimage.html">
+                                Background-image
+                            </a>
+                            <a href="./cssbackgroundrepeat.html">Background
+                                Image Repeat
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssborders.html">CSS
+                            Borders</a>
+                        <div class="dropdown-content">
+                            <a href="./borderwidth.html">
+                                Border-width
+                            </a>
+                            <a href="./cssbordercolor.html">
+                                Border-color
+                            </a>
+                            <a href="./cssbordersides.html">
+                                Border-sides
+                            </a>
+                            <a href="./cssborderrounded.html">
+                                Rounded-Borders
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssmargins.html">CSS
+                            Margins</a>
+                        <div class="dropdown-content">
+                            <a href="./cssmargincollapse.html">
+                                Margin collapse
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csspadding.html">CSS
+                        Padding</a></li>
+                <li><a href="./cssheight-width.html">CSS
+                        Height/Width</a>
+                </li>
+                <li><a href="./cssboxmodel.html">CSS Box
+                        Model</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssoutline.html">CSS
+                            Outline</a>
+                        <div class="dropdown-content">
+                            <a href="./cssoutlinewidth.html">
+                                Outline-Width
+                            </a>
+                            <a href="./cssoutlinecolor.html">
+                                Outline-Color
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./csstextcolor.html">CSS
+                            Text-Color</a>
+                        <div class="dropdown-content">
+                            <a href="./csstextalignment.html">
+                                Text-Alignment
+                            </a>
+                            <a href="./csstextdecoration.html">
+                                Text-Decoration
+                            </a>
+                            <a href="./csstexttransformation.html">
+                                Text-Transformation
+                            </a>
+                            <a href="./csstextspacing.html">
+                                Text-Spacing
+                            </a>
+                            <a href="./csstextshadow.html">
+                                Text-Shadow
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssfontfamily.html">CSS
+                            Font-Family</a>
+                        <div class="dropdown-content">
+                            <a href="./cssfontwebsafe.html">
+                                Font-Web Safe
+                            </a>
+                            <a href="./cssfontstyle.html">
+                                Font-Style
+                            </a>
+                            <a href="./cssfontsize.html">
+                                Font-Size
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csslinks.html">CSS Links</a></li>
+                <li><a href="./csslists.html">CSS Lists</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssfloat.html">CSS
+                            Float</a>
+                        <div class="dropdown-content">
+                            <a href="./cssclear.html">
+                                Clear
+                            </a>
+
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csslineblock.html">CSS Line-block</a></li>
+                <li><a href="./cssmaxwidth.html">CSS Max-Width</a></li>
+                <li><a href="./cssposition.html">CSS Position</a></li>
+                <li><a href="./csszindex.html">CSS Z-index</a></li>
+                <li><a href="./cssoverflow.html">CSS Overflow</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssfloat.html">CSS
+                            Float</a>
+                        <div class="dropdown-content">
+                            <a href="./cssclear.html">
+                                Clear
+                            </a>
+
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csslineblock.html">CSS Line-block</a></li>
+                <li><a href="./cssalign.html">CSS Align</a></li>
+                <li><a href="./csscombinators.html">CSS Combinators</a></li>
+                <li><a href="./csspseudoclasses.html">CSS Pseudo-classes</a></li>
+                <li><a href="./csspseudoelements.html">CSS Pseudo-Elements</a></li>
+                <li><a href="./cssopacity.html">CSS Opacity</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssnavbar.html">CSS
+                            Navbar</a>
+                        <div class="dropdown-content">
+                            <a href="./cssverticalbar.html">
+                                Vertical NavBar
+                            </a>
+                            <a href="./csshorizontalbar.html">
+                                Horizontal NavBar
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <li><a href="./cssdropdown.html">CSS Dropdowns</a></li>
+                <li><a href="./cssimagegallery.html">CSS Image Gallery</a></li>
+                <li><a href="./cssimagesprites.html">CSS Image Sprites</a></li>
+                <li><a href="./cssattrselectors.html">CSS Attr Selectors</a></li>
+                <li><a href="./cssforms.html">CSS Forms</a></li>
+                <li><a href="./csscounters.html">CSS Counters</a></li>
+                <li><a href="./csswebsitelayout.html">CSS Website Layout</a></li>
+                <li><a href="./cssunits.html">CSS Units</a></li>
+                <li><a href="./cssspecificity.html">CSS Specificity</a></li>
+                <li><a href="./cssimportant.html">CSS !important</a></li>
+
+
+            </ul>
+        </div>
+        <div class="you12">
+            <div class="you5">
+                <div>
+                    <div class="you6">
+                        <h2>CSS Layout - Overflow</h2>
+
+                        <h4>The CSS overflow property controls what happens to content that is too big to fit into an
+                            area.</h4>
+
+                        <h2> CSS Overflow</h2>
+                        <h4>The overflow property specifies whether to clip the content or to add scrollbars when the
+                            content of an element is too big to fit in the specified area.</h4>
+
+                        <h4> The overflow property has the following values:</h4>
+
+                        visible - Default. The overflow is not clipped. The content renders outside the element's
+                        box</br>
+                        hidden - The overflow is clipped, and the rest of the content will be invisible</br>
+                        scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content</br>
+                        auto - Similar to scroll, but it adds scrollbars only when necessary</h4>
+
+
+                        <div>
+                            <h2>
+                                <p class="you7">Example:</p>
+                            </h2>
+
+                        </div>
+                    </div>
+                    <div class="you8">
+                        <div class="you9">
+                            <p>
+                                &#60;!DOCTYPE html&#62;
+                            </p>
+                            <p>
+                                &#60;html&#62;
+                            </p>
+                            <p>
+                                &#60;head&#62;
+                            </p>
+                            <p>
+                                &#60;title&#62;CSS Layout - Overflow&#60;/title&#62;
+                            </p>
+
+                            &#60;style&#62;
+                            <p> .in {
+                                background-color: coral;
+                                width: 200px;</br>
+                                height: 65px;
+                                border: 1px solid;</br>
+                                overflow: visible;
+                                }</p>
+
+                            <p> .in1 {
+                                background-color: coral;</br>
+                                width: 200px;
+                                height: 65px;</br>
+                                border: 1px solid black;
+                                overflow: hidden;</br>
+                                }</p>
+
+                            <p> .in2 {
+                                background-color: coral;</br>
+                                width: 200px;
+                                height: 100px;</br>
+                                border: 1px solid black;</br>
+                                overflow: scroll;
+                                }</p>
+
+                            <p> .in3 {
+                                background-color: coral;</br>
+                                width: 200px;
+                                height: 65px;</br>
+                                border: 1px solid black;</br>
+                                overflow: auto;
+                                }</p>
+                            <p>.in4 {
+                                background-color: coral;</br>
+                                width: 200px;
+                                height: 65px;</br>
+                                border: 1px solid black;</br>
+                                overflow-x: hidden;</br>
+                                overflow-y: scroll;
+                                }</p>
+                            <p> &#60;/style&#62;</p>
+                            <p>
+                                &#60;/head&#62;
+                            </p>
+                            <p> &#60;body&#62;</p>
+
+                            <p> &#60;h2&#62;Overflow: visible&#60;/h2&#62;</p>
+
+                            <p> &#60;p&#62;By default, the overflow is visible, meaning</br> that it is not clipped and
+                                it
+                                renders
+                                outside the </br> element's box:&#60;/p&#62;</p>
+
+                            <p> &#60;div class="in"&#62;You can use the overflow</br> property when you want to have
+                                better
+                                control of
+                                the layout.</br>
+                                The overflow property specifies what happens if </br> content overflows an element's
+                                box.
+                                &#60;/div&#62;</p>
+
+                            <p> &#60;h2&#62;Overflow: hidden&#60;/h2&#62;</p>
+
+                            <p> &#60;p&#62;With the hidden value, the overflow</br> is clipped, and the rest of the
+                                content
+                                is
+                                hidden:</br>
+                                &#60;/p&#62;</p>
+                            <p> &#60;p&#62;Try to remove the overflow property to understand how it works.&#60;/p&#62;
+                            </p>
+
+                            <p> &#60;div class="in1"&#62;You can use the overflow property </br> when you want to have
+                                better
+                                control of
+                                the layout.</br>
+                                The overflow property specifies what happens if </br> content overflows an element's
+                                box.
+                                &#60;/div&#62;</P>
+
+                            <p>&#60;h2&#62;Overflow: scroll&#60;/h2&#62;</p>
+
+                            <p> &#60;p&#62;Setting the overflow value to scroll, the overflow is</br> clipped and a
+                                scrollbar
+                                is
+                                added to</br>
+                                scroll inside the box. Note that this will add a scrollbar both horizontally </br> and
+                                vertically (even if you do not need it):&#60;/p&#62;</p>
+
+                            <p> &#60;div class="in2"&#62;You can use the overflow property</br> when you want to have
+                                better
+                                control of
+                                the layout.</br>
+                                The overflow property specifies what happens if content </br> overflows an element's
+                                box.
+                                &#60;/div&#62;</p>
+
+                            <p> &#60;h2&#62;Overflow: auto&#60;/h2&#62;</p>
+
+                            <p> &#60;p&#62;The auto value is similar to scroll, only it add scrollbars when
+                                necessary:&#60;/p&#62;
+
+                            <p> &#60;div class="in3"&#62;You can use the overflow property</br> when you want to have
+                                better
+                                control of</br>
+                                the layout. The overflow property specifies what </br> happens if content overflows an
+                                element's box.&#60;/div&#62;&#62;
+
+                            <p> &#60;h2&#62;Overflow-x and overflow-y&#60;/h2&#62;&#62;
+
+                            <p> &#60;p&#62;You can also change the overflow of content horizontally or
+                                vertically.&#60;/p&#62;</p>
+                            <p> &#60;p&#62;overflow-x specifies what to do with the left/right edges of the
+                                content.&#60;/p&#62;</p>
+                            <p> &#60;p&#62;overflow-y specifies what to do with the top/bottom edges of the
+                                content.&#60;/p&#62;</p>
+
+                            <p> &#60;div class="in4"&#62;You can use the overflow property</br> when you want to have
+                                better
+                                control of
+                                the layout.</br>
+                                The overflow property specifies what happens</br> if content overflows an element's box.
+                                &#60;/div&#62;</p>
+
+
+                            <p> &#60;/body&#62;</p>
+                            <p>
+                                &#60;/html&#62;
+                            </p>
+                        </div>
+
+                        <div class="you9">
+                            <h2>
+                                <p class="you10">Output:</p>
+                            </h2>
+
+
+                            <br>
+                            <style>
+                                .in {
+                                    background-color: coral;
+                                    width: 200px;
+                                    height: 65px;
+                                    border: 1px solid;
+                                    overflow: visible;
+                                }
+
+                                .in1 {
+                                    background-color: coral;
+                                    width: 200px;
+                                    height: 65px;
+                                    border: 1px solid black;
+                                    overflow: hidden;
+                                }
+
+                                .in2 {
+                                    background-color: coral;
+                                    width: 200px;
+                                    height: 100px;
+                                    border: 1px solid black;
+                                    overflow: scroll;
+                                }
+
+                                .in3 {
+                                    background-color: coral;
+                                    width: 200px;
+                                    height: 65px;
+                                    border: 1px solid black;
+                                    overflow: auto;
+                                }
+
+                                .in4 {
+                                    background-color: coral;
+                                    width: 200px;
+                                    height: 65px;
+                                    border: 1px solid black;
+                                    overflow-x: hidden;
+                                    overflow-y: scroll;
+                                }
+
+                                .in5 {
+                                    margin-top: 60px;
+                                }
+                            </style>
+                            <h2>Overflow: visible</h2>
+
+                            <p>By default, the overflow is visible, meaning that it is not clipped and it renders
+                                outside the element's box:</p>
+
+                            <div class="in">You can use the overflow property when you want to have better control of
+                                the layout.
+                                The overflow property specifies what happens if content overflows an element's box.
+                            </div>
+
+                            <div class="in5">
+                                <h2>Overflow: hidden</h2>
+
+                                <p>With the hidden value, the overflow is clipped, and the rest of the content is
+                                    hidden:
+                                </p>
+                                <p>Try to remove the overflow property to understand how it works.</p>
+
+                                <div class="in1">You can use the overflow property when you want to have better control
+                                    of
+                                    the layout.
+                                    The overflow property specifies what happens if content overflows an element's box.
+                                </div>
+                            </div>
+
+                            <div class="in5">
+                                <h2>Overflow: scroll</h2>
+
+                                <p>Setting the overflow value to scroll, the overflow is clipped and a scrollbar is
+                                    added to
+                                    scroll inside the box. Note that this will add a scrollbar both horizontally and
+                                    vertically (even if you do not need it):</p>
+
+                                <div class="in2">You can use the overflow property when you want to have better control
+                                    of
+                                    the layout.
+                                    The overflow property specifies what happens if content overflows an element's box.
+                                </div>
+                            </div>
+
+                            <div class="in5">
+                                <h2>Overflow: auto</h2>
+
+                                <p>The auto value is similar to scroll, only it add scrollbars when necessary:</p>
+
+                                <div class="in3">You can use the overflow property when you want to have better control
+                                    of
+                                    the layout. The overflow property specifies what happens if content overflows an
+                                    element's box.</div>
+                            </div>
+
+                            <div class="in5">
+                                <h2>Overflow-x and overflow-y</h2>
+
+                                <p>You can also change the overflow of content horizontally or vertically.</p>
+                                <p>overflow-x specifies what to do with the left/right edges of the content.</p>
+                                <p>overflow-y specifies what to do with the top/bottom edges of the content.</p>
+
+                                <div class="in4">You can use the overflow property when you want to have better control
+                                    of
+                                    the layout.
+                                    The overflow property specifies what happens if content overflows an element's box.
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        margin-top: 25px;
+        width: 300px;
+        height: 40px;
+
+    }
+
+    .div {
+        width: 400px;
+        height: 100px;
+        background-color: #3b2b2bf1;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+
+    }
+
+    button {
+        width: 150px;
+        height: 40px;
+        background-color: #3b2b2bf1;
+        margin-top: 10px;
+        color: #fff;
+    }
+</style>
+
+<body>
+    <div class="div">
+        <input type="text" onkeyup="SearchForNames()" id="names">
+    </div>
+    <button type="button">Submit</button>
+
+    <!-- <ul id="Names">
+        <li></li>
+    </ul> -->
+    <div class="container">
+        <div class="item">Toyota</div>
+        <div class="item">Honda</div>
+        <div class="item">Ford</div>
+        <div class="item">BMW</div>
+        <div class="item">Mercedes</div>
+    </div>
+
+</body>
+<script>
+
+    let cars = [
+        "Toyota",
+    ];
+    // input = "";
+
+    // "Honda", "Ford", "BMW", "Mercedes", "Audi", "Chevrolet",
+    //     "Nissan", "Hyundai", "Kia", "Volkswagen", "Subaru", "Mazda",
+    //     "Lexus", "Jaguar", "Ferrari", "Lamborghini", "Porsche", "Bugatti", "McLaren"
+
+    let Name = "";
+    let Search = "";
+    console.log(cars);
+    function SearchForNames() {
+
+        input = document.getElementById('names').value;
+        console.log(cars);
+
+        // for (i = 0; i < cars.length; i++) {
+        //     Name += cars[i]
+        //     console.log(Name.length);
+        //     for (j = 0; j < Name.length; j++) {
+        //         Search += Name[i];
+        //         console.log(Name[j])
+        //         // if (Name[0] == input[j]) {
+        //         for (k = 0; k < input.length; k++) {
+        //             console.log(input[k]);
+        //             if (input[k] == Search) {
+        //                 console.log(input[k]);
+        //             }
+        //         }
+
+        //     }
+        //     // }
+
+        // }
+
+
+
+
+
+
+    }
+
+</script>
+
+</html>

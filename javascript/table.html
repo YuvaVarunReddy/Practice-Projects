@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="table()">Submit</button>
+    <!-- <p id="num7"></p> -->
+    <button onclick="table1()">Submit</button>
+    <p id="numb7"></p>
+</body>
+<script>
+    // let i = 7;
+    // for (i = 7; i <= 70; i++) {
+    //     if (i % 7 == 0) {
+    //         console.log(i)
+    //     }
+    // }
+    var arry = [7, 14, 21]
+    function table() {
+
+        // table7 = arry[0];
+        length = arry.length + 1;
+        value = arry[0] * length;
+
+        arry.push(value);
+        document.getElementById('numb7').innerHTML = arry;
+    }
+
+    function table1() {
+
+        // table7 = arry[0];
+        length = arry.length + 1;
+        value = arry[0] * length;
+
+        arry.pop(value);
+        document.getElementById('numb7').innerHTML = arry;
+    }
+
+
+
+
+</script>
+
+</html>

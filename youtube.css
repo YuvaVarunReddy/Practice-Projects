@@ -1,0 +1,121 @@
+.menubar{
+    height: 15px; width: 20px;
+
+}
+.youtubelog{
+    height: 50px; width: 70px;
+}
+.searchbar{
+    height: 30px; width: 500px;
+    padding: 1% 5%;
+}
+.voicebar{
+     border-radius: 50%;
+     padding: 15px;
+     background: white;
+}
+.voicebar2{
+    height: 20px; width: 20px;
+    align-content: center;
+}
+.video{
+    height: 30px; width: 30px;
+    padding: 1% 5%;
+}
+.noborder{
+    border: none;
+    box-shadow: 1px 1px 6px 0px;
+}
+.in{
+    width: 100%;
+    display: flex;
+}
+.he{
+   height: 20%;
+}
+.du{
+    width: 20%;
+    justify-content: right;
+    display: flex;
+}
+.va{
+    width: 60%;
+    justify-content: center;
+    display: flex;
+
+}
+.on{
+    width: 15%;
+    justify-content: left;
+    display: flex;
+}
+.it{
+    width: 5%;
+     justify-content: left;
+     display: flex;
+}
+.end{
+    justify-content: center;
+    display: flex;
+}
+.button{
+    align-items: center;
+    height: 35px;
+}
+.home{
+    padding: 10px 5px;
+}
+.you{
+    width: 15%;
+}
+.you2{
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+}
+.you3{
+    margin-right: 20px;
+    
+}
+.you4{
+    width: 80%;
+    display: flex;
+}   
+.you5{
+    width: 24%;
+    padding: 5px;
+
+}
+.you7{
+    border-radius: 10px;
+    /* object-fit: contain; */
+}
+.you8{
+    width: 20%;
+    border-radius: 40%;
+    margin: 10px;
+    height: 50px;
+}
+.you9{
+     width: 100%;
+     display: flex;
+}
+.you10{
+    width: 70%;
+}
+.you11{
+    width: 10%;
+}
+.you12{
+    justify-content: center;
+    align-items: center;
+
+}.you13{
+    width: 20%;
+}
+.you14{
+    height: 180px;
+}
+.inn{
+    flex-wrap: wrap;
+}

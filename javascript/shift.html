@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div1 {
+        width: 100%;
+        height: 700px;
+        background-color: rgba(82, 82, 153, 0.78);
+        display: flex;
+    }
+
+    .div2 {
+        width: 40%;
+        height: 400px;
+        background-color: #fff;
+        margin-top: 50px;
+        /* margin-right: 50px; */
+        margin-left: 100px;
+    }
+
+    .div3 {
+        width: 40%;
+        height: 400px;
+        background-color: #fff;
+        margin-top: 50px;
+        /* margin-right: px; */
+        margin-left: 120px;
+    }
+
+    button {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0px 0px 290px;
+    }
+
+    p {
+        font-size: x-large;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 80px;
+    }
+</style>
+
+<body>
+    <div class="div1">
+        <div class="div2" id="Shift">
+            <p>Box1</p>
+            <button onclick="Btn('box1')">Click</button>
+        </div>
+        <div class="div3" id="Shift1">
+            <p>Box2</p>
+            <button class="Name" onclick="Btn('box2')">Click</button>
+        </div>
+    </div>
+
+</body>
+<script>
+    var Scores = 0;
+    var Score = 0;
+    let val = 1;
+    let PlayerOne = true;
+
+    function Btn(d) {
+
+        if (PlayerOne) {
+
+
+
+            if (d == 'box1') {
+                // document.getElementById('Shift1').style.pointerEvents = "none";
+
+                if (Scores < 6) {
+                    Scores++;
+                    document.getElementById('Shift').style.background = "red";
+                    document.getElementById('Shift1').style.background = "#fff";
+                    // document.getElementById('Shift1').style.pointerEvents = "";
+
+                } else {
+                    PlayerOne = false;
+
+                    document.getElementById('Shift1').style.background = "red";
+                    document.getElementById('Shift').style.background = "#fff";
+                }
+                console.log(Scores);
+
+            } else {
+
+                // if (Scores < 12) {
+                //     document.getElementById('Shift1').style.pointerEvents = "none";
+
+                //     Scores++;
+                //     document.getElementById('Shift1').style.background = "red";
+                //     document.getElementById('Shift').style.background = "#fff";
+                //     document.getElementById('Shift1').style.pointerEvents = "";
+
+                // } else {
+                //     document.getElementById('Shift').style.background = "red";
+                //     document.getElementById('Shift1').style.background = "#fff";
+                // }
+                // console.log(Scores);
+
+            }
+
+            // if (Scores != 6) {
+
+            // }
+
+        } else {
+            if (d == 'box2') {
+                if (Scores < 12) {
+                    document.getElementById('Shift1').style.pointerEvents = "none";
+
+                    Scores++;
+                    document.getElementById('Shift1').style.background = "red";
+                    document.getElementById('Shift').style.background = "#fff";
+                    document.getElementById('Shift1').style.pointerEvents = "";
+
+                } else {
+                    PlayerOne = true;
+                    document.getElementById('Shift').style.background = "red";
+                    document.getElementById('Shift1').style.background = "#fff";
+                }
+                console.log(Scores);
+
+            }
+
+        }
+    }
+
+</script>
+
+</html>

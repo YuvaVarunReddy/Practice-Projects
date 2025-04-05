@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <label></label> -->
+    <button type="submit" id="yuva1" onclick="Sub()">-</button>
+    <input type="number" value="1" id="Qty">
+    <button type="submit" id="Yuva" onClick="Add()">+</button>
+    <script>
+        // // var Yuva = { Bike: 10 };
+        // // var Reddy = { Car: 4 };
+        // // varun = Yuva.Bike ** Reddy.Car;
+        // // console.log(varun);
+
+
+        // var mahi = 1;
+        // var mahi1 = 1;
+        // // window.prompt
+
+        function Add() {
+            // var varun = document.getElementById('Yuva').innerHTML = mahi++
+            // console.log(varun);
+
+            var Qty = document.getElementById('Qty').value;
+            Qty = Number(Qty) + 1;
+            document.getElementById('Qty').value = Qty;
+
+        }
+        function Sub() {
+            // var varun1 = document.getElementById('yuva1').innerHTML = mahi1--
+            // console.log(varun1);
+            var Qty = document.getElementById('Qty').value;
+            Qty = Number(Qty) - 1;
+            document.getElementById('Qty').value = Qty;
+
+        }
+    </script>
+</body>
+
+</html>

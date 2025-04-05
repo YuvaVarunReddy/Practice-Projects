@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+
+<style>
+    .you1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.775);
+        height: 70px;
+    }
+
+    .you2 {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+
+    .you3 {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 26px 16px;
+        text-decoration: none;
+    }
+
+
+    li a:hover {
+        background-color: rgba(245, 245, 220, 0.49);
+    }
+
+
+
+    .ull {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 212px;
+        height: 900px;
+        background-color: #f1f1f1;
+        overflow: scroll;
+    }
+
+    li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+
+    li a:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    .you4 {
+        display: flex;/
+    }
+
+    .you5 {
+        background-color: #bbb;
+        color: #000;
+        height: 800px;
+        width: 1200px;
+        box-shadow: 0px 1px 8px 0px;
+        margin-top: 50px;
+        margin-left: 150px;
+        margin-bottom: 30px;
+        overflow-y: scroll;
+    }
+
+    .you6 {
+        float: left;
+        width: 100%;
+        padding: 30px 0px 0px 50px;
+    }
+
+    .you7 {
+        float: left;
+        padding: 5px 0px 0px 50px;
+    }
+
+    .you8 {
+        display: flex;
+        padding: 0px 0px 0px 150px;
+    }
+
+    .you9 {
+        float: left;
+        width: 100%;
+        padding: 0px 0px -1px 50px;
+    }
+
+    .you10 {
+        margin: -70px 0px 0px -50px;
+    }
+
+    .you11 {
+        margin-right: 100px;
+        margin-top: -10px;
+    }
+
+    .you12 {
+        background-image: url('https://i.pinimg.com/originals/dd/b7/d2/ddb7d26375807f772c47b7df57a15395.gif');
+        width: 100%;
+    }
+
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 300px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .you13 {
+        margin-left: 70px;
+
+    }
+</style>
+
+<body>
+    <div class="you1">
+        <li class="you2"><a href="./webpage.html" class="you3">Home</a></li>
+        <li class="you2"><a href="./webpage1.html" class="you3">HTML</a>
+
+        </li>
+        <li class="you2"><a href="./csswebpage1.html" class="you3">CSS</a></li>
+        <li style="float:right" class="you2"><a class="you3">About</a></li>
+
+    </div>
+
+
+    <div class="you4">
+        <div>
+            <ul class="ull">
+                <li><a href="#home">CSS Tutorial</a></li>
+
+                <li><a href="./csshome.html">CSS Home</a>
+                </li>
+                <li><a href="./csscomments.html">CSS Comments</a>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./csscolors.html">CSS Colors</a>
+                        <div class="dropdown-content">
+                            <a href="./csscolor1.html">
+                                Colors
+                            </a>
+                            <a href="./cssrgb.html">RGB
+                            </a>
+                            <a href="./csshex.html">HEX
+                            </a>
+                            <a href="./csshsl.html">
+                                HSL</a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssbackgrounds.html">CSS
+                            Background Color</a>
+                        <div class="dropdown-content">
+                            <a href="./cssbackgroundimage.html">
+                                Background-image
+                            </a>
+                            <a href="./cssbackgroundrepeat.html">Background
+                                Image Repeat
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssborders.html">CSS
+                            Borders</a>
+                        <div class="dropdown-content">
+                            <a href="./borderwidth.html">
+                                Border-width
+                            </a>
+                            <a href="./cssbordercolor.html">
+                                Border-color
+                            </a>
+                            <a href="./cssbordersides.html">
+                                Border-sides
+                            </a>
+                            <a href="./cssborderrounded.html">
+                                Rounded-Borders
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssmargins.html">CSS
+                            Margins</a>
+                        <div class="dropdown-content">
+                            <a href="./cssmargincollapse.html">
+                                Margin collapse
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csspadding.html">CSS
+                        Padding</a></li>
+                <li><a href="./cssheight-width.html">CSS
+                        Height/Width</a>
+                </li>
+                <li><a href="./cssboxmodel.html">CSS Box
+                        Model</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssoutline.html">CSS
+                            Outline</a>
+                        <div class="dropdown-content">
+                            <a href="./cssoutlinewidth.html">
+                                Outline-Width
+                            </a>
+                            <a href="./cssoutlinecolor.html">
+                                Outline-Color
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./csstextcolor.html">CSS
+                            Text-Color</a>
+                        <div class="dropdown-content">
+                            <a href="./csstextalignment.html">
+                                Text-Alignment
+                            </a>
+                            <a href="./csstextdecoration.html">
+                                Text-Decoration
+                            </a>
+                            <a href="./csstexttransformation.html">
+                                Text-Transformation
+                            </a>
+                            <a href="./csstextspacing.html">
+                                Text-Spacing
+                            </a>
+                            <a href="./csstextshadow.html">
+                                Text-Shadow
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <div class="dropdown">
+                    <li><a href="./cssfontfamily.html">CSS
+                            Font-Family</a>
+                        <div class="dropdown-content">
+                            <a href="./cssfontwebsafe.html">
+                                Font-Web Safe
+                            </a>
+                            <a href="./cssfontstyle.html">
+                                Font-Style
+                            </a>
+                            <a href="./cssfontsize.html">
+                                Font-Size
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csslinks.html">CSS Links</a></li>
+                <li><a href="./csslists.html">CSS Lists</a></li>
+                <div class="dropdown">
+                    <li><a href="./csstableborder.html">CSS
+                            Table-Border</a>
+                        <div class="dropdown-content">
+                            <a href="./csstablesize.html">
+                                Table-Size
+                            </a>
+                            <a href="./csstablealignment.html">
+                                Table-Alignment
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./cssdisplay.html">CSS Display</a></li>
+                <li><a href="./cssmaxwidth.html">CSS Max-Width</a></li>
+                <li><a href="./cssposition.html">CSS Position</a></li>
+                <li><a href="./csszindex.html">CSS Z-index</a></li>
+                <li><a href="./cssoverflow.html">CSS Overflow</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssfloat.html">CSS
+                            Float</a>
+                        <div class="dropdown-content">
+                            <a href="./cssclear.html">
+                                Clear
+                            </a>
+
+                        </div>
+                </div>
+                </li>
+                <li><a href="./csslineblock.html">CSS Line-block</a></li>
+                <li><a href="./cssalign.html">CSS Align</a></li>
+                <li><a href="./csscombinators.html">CSS Combinators</a></li>
+                <li><a href="./csspseudoclasses.html">CSS Pseudo-classes</a></li>
+                <li><a href="./csspseudoelements.html">CSS Pseudo-Elements</a></li>
+                <li><a href="./cssopacity.html">CSS Opacity</a></li>
+                <div class="dropdown">
+                    <li><a href="./cssnavbar.html">CSS
+                            Navbar</a>
+                        <div class="dropdown-content">
+                            <a href="./cssverticalbar.html">
+                                Vertical NavBar
+                            </a>
+                            <a href="./csshorizontalbar.html">
+                                Horizontal NavBar
+                            </a>
+                        </div>
+                </div>
+                </li>
+                <li><a href="./cssdropdown.html">CSS Dropdowns</a></li>
+                <li><a href="./cssimagegallery.html">CSS Image Gallery</a></li>
+                <li><a href="./cssimagesprites.html">CSS Image Sprites</a></li>
+                <li><a href="./cssattrselectors.html">CSS Attr Selectors</a></li>
+                <li><a href="./cssforms.html">CSS Forms</a></li>
+                <li><a href="./csscounters.html">CSS Counters</a></li>
+                <li><a href="./csswebsitelayout.html">CSS Website Layout</a></li>
+                <li><a href="./cssunits.html">CSS Units</a></li>
+                <li><a href="./cssspecificity.html">CSS Specificity</a></li>
+                <li><a href="./cssimportant.html">CSS !important</a></li>
+
+            </ul>
+        </div>
+        <div class="you12">
+            <div class="you5">
+                <div>
+                    <div class="you6">
+                        <h2>CSS Counters</h2>
+
+                        <h3> Automatic Numbering With Counters</h3>
+                        <h4> CSS counters are like "variables". The variable values can be incremented by CSS rules
+                            (which
+                            will track how many times they are used).</h4>
+
+                        <h4> To work with CSS counters we will use the following properties:</h4>
+
+                        <h4>1.counter-reset - Creates or resets a counter</br>
+                            2.counter-increment - Increments a counter value</br>
+                            3.content - Inserts generated content</br>
+                            4.counter() or counters() function - Adds the value of a counter to an element</h4>
+
+
+
+                        <div>
+                            <h2>
+                                <p class="you7">Example:</p>
+                            </h2>
+
+                        </div>
+                    </div>
+                    <div class="you8">
+                        <div class="you9">
+                            <p>
+                                &#60;!DOCTYPE html&#62;
+                            </p>
+                            <p>
+                                &#60;html&#62;
+                            </p>
+                            <p>
+                                &#60;head&#62;
+                            </p>
+                            <p>
+                                &#60;title&#62;Attribute Selectors&#60;/title&#62;
+                            </p>
+
+                            <p> &#60;style&#62;</p>
+
+                            <p> .div {
+                                counter-reset: section;
+                                }</p>
+
+                            <p> .h2::before {
+                                counter-increment: section;</br>
+                                content: "Section " counter(section) ": ";
+                                }</p>
+
+
+                            <p> .h1 {
+                                counter-reset: subsection;
+                                }</p>
+
+                            <p> .h11::before {
+                                counter-increment: section;</br>
+                                content: "Section " counter(section) ". ";
+                                }</p>
+
+                            <p> .h22::before {
+                                counter-increment: subsection;</br>
+                                content: counter(section) "." counter(subsection) " ";
+                                }</p>
+
+                            <p> .ol {
+                                counter-reset: section;
+                                list-style-type: none;</br>
+                                }</p>
+
+                            <p> .li1::before {
+                                counter-increment: section;</br>
+                                content: counters(section, ".") " ";
+                                }</p>
+                            <p> &#60;/style&#62;</p>
+                            <p>
+                                &#60;/head&#62;
+                            </p>
+                            <p> &#60;body&#62;</p>
+
+
+
+                            <p> &#60;div class="div"&#62;
+                            <p> &#60;h1&#62;Using CSS Counters&#60;/h1&#62;</p>
+
+                            <p> &#60;h2 class="h2"&#62;HTML Tutorial&#60;/h2&#62;</br>
+                                &#60;h2 class="h2"&#62;CSS Tutorial&#60;/h2&#62;</br>
+                                &#60;h2 class="h2"&#62;JavaScript Tutorial&#60;/h2&#62;</br>
+                                &#60;h2 class="h2"&#62; Tutorial&#60;/h2&#62;</br>
+                                &#60;h2 class="h2"&#62;SQL Tutorial&#60;/h2&#62;</p>
+
+                            &#60;/div&#62;</p>
+
+                            <p> &#60;div class="div"&#62;</br>
+                            <p>&#60;h1 class="h1 h11"&#62;HTML/CSS Tutorials&#60;/h1&#62;</br>
+                                &#60;h2 class="h22"&#62;HTML&#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;CSS&#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;Bootstrap&#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;W3.CSS&#60;/h2&#62;</p>
+
+                            <p> &#60;h1 class="h1 h11"&#62;Scripting Tutorials&#60;/h1&#62;</br>
+                                &#60;h2 class="h22"&#62;JavaScript&#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;jQuery&#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;React&#60;/h2&#62;</p>
+
+                            <p> &#60;h1 class="h1 h11"&#62;Programming Tutorials &#60;/h1&#62;</br>
+                                &#60;h2 class="h22"&#62;Python &#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;Java &#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;C++ &#60;/h2&#62;</p>
+
+
+                            <p> &#60;h1 class="h1 h11"&#62;HTML/CSS Tutorials &#60;/h1&#62;</br>
+                                &#60;h2 class="h22"&#62;HTML &#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;CSS &#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;Bootstrap &#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;W3.CSS &#60;/h2&#62;</p>
+
+                            <p> &#60;h1 class="h1 h11"&#62;Scripting Tutorials &#60;/h1&#62;</br>
+                                &#60;h2 class="h22"&#62;JavaScript &#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;jQuery &#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;React &#60;/h2&#62;</p>
+
+                            <p> &#60;h1 class="h1 h11"&#62;Programming Tutorials &#60;/h1&#62;</br>
+                                &#60;h2 class="h22"&#62;Python &#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;Java &#60;/h2&#62;</br>
+                                &#60;h2 class="h22"&#62;C++ &#60;/h2&#62;</p>
+
+                            &#60;/div&#62;</p>
+
+                            <p> &#60;ol class="ol"&#62;</br>
+                            <p> &#60;li class="li1"&#62;item&#60;/li&#62;</p>
+                            <p> &#60;li class="li1"&#62;item
+                            <p> &#60;ol class="ol"&#62;</br>
+                                &#60;li class="li1"&#62;item&#60;/li&#62;</br>
+                                &#60;li class="li1"&#62;item&#60;/li&#62;</br>
+                            <p> &#60;li class="li1"&#62;item
+                            <p> &#60;ol class="ol"&#62;</br>
+                                &#60;li class="li1"&#62;item&#60;/li&#62;</br>
+                                &#60;li class="li1"&#62;item&#60;/li&#62;</br>
+                                &#60;li class="li1"&#62;item&#60;/li&#62;</br>
+                                &#60;/ol&#62;</p>
+                            &#60;/li&#62;</p>
+                            <p> &#60;li class="li1"&#62;item&#60;/li&#62;</p>
+                            &#60;/ol&#62;</p>
+                            &#60;/li&#62;</p>
+                            &#60;li class="li1"&#62;item&#60;/li&#62;</br>
+                            &#60;li class="li1"&#62;item&#60;/li&#62;</br>
+                            &#60;/ol&#62;</p>
+
+                            <p> &#60;ol class="ol"&#62;</br>
+                                &#60;li class="li1"&#62;item&#60;/li&#62;</br>
+                                &#60;li class="li1"&#62;item&#60;/liv&#62;</br>
+                                &#60;/ol&#62;</p>
+
+
+
+                            <p> &#60;/body&#62;</p>
+                            <p>
+                                &#60;/html&#62;
+                            </p>
+                        </div>
+
+                        <div class="you9 you13">
+                            <h2>
+                                <p class="you10">Output:</p>
+                            </h2>
+
+
+                            <br>
+                            <style>
+                                .div {
+                                    counter-reset: section;
+                                }
+
+                                .h2::before {
+                                    counter-increment: section;
+                                    content: "Section " counter(section) ": ";
+                                }
+
+
+                                .h1 {
+                                    counter-reset: subsection;
+                                }
+
+                                .h11::before {
+                                    counter-increment: section;
+                                    content: "Section " counter(section) ". ";
+                                }
+
+                                .h22::before {
+                                    counter-increment: subsection;
+                                    content: counter(section) "." counter(subsection) " ";
+                                }
+
+                                .ol {
+                                    counter-reset: section;
+                                    list-style-type: none;
+                                }
+
+                                .li1::before {
+                                    counter-increment: section;
+                                    content: counters(section, ".") " ";
+                                }
+                            </style>
+                            <div class="div">
+                                <h1>Using CSS Counters</h1>
+
+                                <h2 class="h2">HTML Tutorial</h2>
+                                <h2 class="h2">CSS Tutorial</h2>
+                                <h2 class="h2">JavaScript Tutorial</h2>
+                                <h2 class="h2">Python Tutorial</h2>
+                                <h2 class="h2">SQL Tutorial</h2>
+
+                            </div>
+
+                            <div class="div">
+                                <h1 class="h1 h11">HTML/CSS Tutorials</h1>
+                                <h2 class="h22">HTML</h2>
+                                <h2 class="h22">CSS</h2>
+                                <h2 class="h22">Bootstrap</h2>
+                                <h2 class="h22">W3.CSS</h2>
+
+                                <h1 class="h1 h11">Scripting Tutorials</h1>
+                                <h2 class="h22">JavaScript</h2>
+                                <h2 class="h22">jQuery</h2>
+                                <h2 class="h22">React</h2>
+
+                                <h1 class="h1 h11">Programming Tutorials</h1>
+                                <h2 class="h22">Python</h2>
+                                <h2 class="h22">Java</h2>
+                                <h2 class="h22">C++</h2>
+
+
+                                <h1 class="h1 h11">HTML/CSS Tutorials</h1>
+                                <h2 class="h22">HTML</h2>
+                                <h2 class="h22">CSS</h2>
+                                <h2 class="h22">Bootstrap</h2>
+                                <h2 class="h22">W3.CSS</h2>
+
+                                <h1 class="h1 h11">Scripting Tutorials</h1>
+                                <h2 class="h22">JavaScript</h2>
+                                <h2 class="h22">jQuery</h2>
+                                <h2 class="h22">React</h2>
+
+                                <h1 class="h1 h11">Programming Tutorials</h1>
+                                <h2 class="h22">Python</h2>
+                                <h2 class="h22">Java</h2>
+                                <h2 class="h22">C++</h2>
+
+                            </div>
+
+                            <ol class="ol">
+                                <li class="li1">item</li>
+                                <li class="li1">item
+                                    <ol class="ol">
+                                        <li class="li1">item</li>
+                                        <li class="li1">item</li>
+                                        <li class="li1">item
+                                            <ol class="ol">
+                                                <li class="li1">item</li>
+                                                <li class="li1">item</li>
+                                                <li class="li1">item</li>
+                                            </ol>
+                                        </li>
+                                        <li class="li1">item</li>
+                                    </ol>
+                                </li>
+                                <li class="li1">item</li>
+                                <li class="li1">item</li>
+                            </ol>
+
+                            <ol class="ol">
+                                <li class="li1">item</li>
+                                <li class="li1">item</li>
+                            </ol>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- </div> -->
+
+</body>
+
+</html>
